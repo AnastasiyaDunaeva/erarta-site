@@ -1,0 +1,12 @@
+#исключение дирикторий редакторов
+.idea/
+
+#исключение файлов ОС
+Thumbs.db
+desktop.ini
+.DS_Store
+
+#исключения для сборки
+node_modules/
+package-lock.json
+build/

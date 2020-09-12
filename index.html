@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/page_main.css" />
+    <!-- Resource style -->
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+
+    <title>Erarta</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <section>
+        <h1 id="myTargetElement">0</h1>
+      </section>
+
+
+
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"
+          ><img src="img/logo.svg" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <svg class="hidden">
+          <defs>
+            <filter id="filter-1">
+              <feTurbulence
+                type="fractalNoise"
+                baseFrequency="0"
+                numOctaves="1"
+                result="warp"
+              />
+              <feOffset dx="-90" result="warpOffset" />
+              <feDisplacementMap
+                xChannelSelector="R"
+                yChannelSelector="G"
+                scale="30"
+                in="SourceGraphic"
+                in2="warpOffset"
+              />
+            </filter>
+          </defs>
+        </svg>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mr-auto menu menu--line">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link chevron-down menu__link menu__link--1"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Музей
+                <img src="img/chevron-down.svg" alt="" width="16" height="16" />
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">О музее</a>
+                <a class="dropdown-item" href="#">Экскурсии</a>
+                <a class="dropdown-item" href="#">Коллекция</a>
+                <a class="dropdown-item" href="#">Только в Эрарте</a>
+                <a class="dropdown-item" href="#">Ресторан</a>
+                <a class="dropdown-item" href="#">Магазин</a>
+                <a class="dropdown-item" href="#">Часто задаваемые вопросы</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link menu__link menu__link--1"
+                href="exhibitions.html"
+                >Выставки</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu__link menu__link--1" href="#">Билеты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu__link menu__link--1" href="#">Контакты</a>
+            </li>
+            <li class="nav-item">
+              <img src="img/search.svg" alt="" width="27" height="27" />
+            </li>
+          </ul>
+          <div class="my-2 my-lg-0 text-s">
+            <img src="img/clock.svg" alt="" width="25" height="25" />
+            сегодня музей работает до 22:00
+          </div>
+        </div>
+      </nav>
+
+      <div class="jumbotron">
+        <div class="main-heading-content">
+          <div class="text-l text-bold">С 3 сентября</div>
+          <h3 class="text-l">
+            Взгляд из будущего: раскопки луккского храма 21 века
+          </h3>
+          <h2 class="main-heading col-lg-7 col-md-7">The bounty killart</h2>
+        </div>
+
+        <div class="main-slide float-right">
+          <img class="img-fluid" src="img/main-slide-1.jpg" alt="" />
+        </div>
+
+        <div class="col-lg-7 col-md-7 button-wrap-center">
+          <a class="btn btn-secondary btn-lg" href="#" role="button"
+            >Подробнее</a
+          >
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          Смотреть все события <img src="img/arrow-right.svg" alt="" />
+        </div>
+        <div class="col-lg-6">
+          <h2 class="heading-red float-right">Выставки</h2>
+        </div>
+      </div>
+
+      <div class="glide">
+        <div data-glide-el="track" class="glide__track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="glide__container">
+                <img src="img/01.png" alt="" />
+                <div class="rside"></div>
+                <div class="lside"></div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="glide__container">
+                <div>
+                  <img src="img/02.jpg" alt="" />
+                </div>
+                <div class="rside"></div>
+                <div class="lside"></div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="glide__container">
+                <div>
+                  <img src="img/03.jpg" alt="" />
+                </div>
+                <div class="rside"></div>
+                <div class="lside"></div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="glide__container">
+                <div>
+                  <img src="img/04.jpg" alt="" />
+                </div>
+                <div class="rside"></div>
+                <div class="lside"></div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="glide__container">
+                <div>
+                  <img src="img/05.jpg" alt="" />
+                </div>
+                <div class="rside"></div>
+                <div class="lside"></div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="glide__container">
+                <div>
+                  <img src="img/06.jpg" alt="" />
+                </div>
+                <div class="rside"></div>
+                <div class="lside"></div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="glide__container">
+                <div>
+                  <img src="img/07.png" alt="" />
+                </div>
+                <div class="rside"></div>
+                <div class="lside"></div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="glide__container">
+                <div>
+                  <img src="img/08.jpg" alt="" />
+                </div>
+                <div class="rside"></div>
+                <div class="lside"></div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="glide__container">
+                <div>
+                  <img src="img/09.jpg" alt="" />
+                </div>
+                <div class="rside"></div>
+                <div class="lside"></div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="glide__container">
+                <div>
+                  <img src="img/10.jpg" alt="" />
+                </div>
+                <div class="rside"></div>
+                <div class="lside"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <div class="glide__arrow glide__arrow--prev" data-glide-dir="<"></div>
+          <div class="glide__arrow glide__arrow--next" data-glide-dir=">"></div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="painter"></div>
+      </footer>
+    </div>
+
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
+    <!-- Resource jQuery -->
+    <script src="js/main.js"></script>
+    <script src="js/animatedLink.js"></script>
+    <script src="js/countUp.js" type="module"></script>
+  </body>
+</html>

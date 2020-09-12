@@ -1,0 +1,109 @@
+@import "reset";
+@import "../node_modules/bourbon/app/assets/stylesheets/bourbon"; // http://bourbon.io/
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "partials/variables"; // colors, font etc...
+
+@import "partials/layout"; // responsive grid and media queries
+
+//@import "../node_modules/@glidejs/glide/dist/css/glide.core.min.css";
+@import "menuLink";
+@import "slider";
+@import "painter";
+
+@font-face {
+  font-family: "Stapel_CM";
+  src: url("../font/Stapel_Condensed_Medium.otf");
+}
+
+body {
+  font-family: "PT Root UI Web", Arial, sans-serif;
+  font-size: 30px;
+  color: $grey-1;
+}
+
+.navbar {
+  padding: 40px 50px 10px;
+}
+
+.navbar-brand img {
+  width: 280px;
+}
+
+.navbar-collapse {
+  padding-left: 152px;
+}
+
+.nav-item {
+  padding: 0 25px;
+}
+
+.text-s {
+  font-size: 20px;
+}
+
+.text-m {
+  font-size: 30px;
+}
+
+.text-l {
+  font-size: 40px;
+}
+
+.text-xxl {
+  font-size: 100px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.jumbotron {
+  position: relative;
+  height: 1100px;
+  overflow: hidden;
+}
+
+.main-heading-content {
+  position: relative;
+  height: 100%;
+  z-index: 10;
+}
+
+.main-heading {
+  font-family: "Stapel_CM", "Comic Sans MS", sans-serif;
+  font-size: 216px;
+  color: $red;
+  text-transform: uppercase;
+  line-height: 200px;
+}
+
+.main-slide {
+  //width: 740px;
+  max-width: 50%;
+  max-height: 100%;
+  //max-height: 90%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.main-slide-1 {
+  background: url("../img/main-slide-1.jpg") 0 100px no-repeat;
+  object-fit: cover;
+}
+
+.button-wrap-center {
+  display: flex;
+}
+
+.heading-red {
+  text-transform: uppercase;
+  font-family: "PT Root UI Web", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  color: $red;
+  padding: 50px 70px;
+}
