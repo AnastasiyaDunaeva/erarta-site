@@ -1,0 +1,20 @@
+@import "partials/variables";
+@import "font";
+
+.ticket {
+  padding: 28px;
+  background: $grey-4;
+
+  &-description {
+    font-family: "PTRootUIWebMedium", "Comic Sans MS", sans-serif;
+  }
+
+  &-name,
+  &-price {
+    font-family: "PTSansWebCaptionBold", "Comic Sans MS", sans-serif;
+  }
+
+  &-price {
+    color: $red;
+  }
+}

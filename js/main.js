@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
     fxObj && new fxObj(el);
   });
 
-  var carousel = new Glide(".glide", {
+  var carouselExhibitions = new Glide(".glide-exhibitions", {
     autoplay: 5000,
     type: "slyder",
     perView: 5,
@@ -16,9 +16,19 @@ jQuery(document).ready(function ($) {
     focusAt: "center",
   });
 
+  var carouselNews = new Glide(".glide-news", {
+    autoplay: 5000,
+    type: "carousel",
+    perView: 5,
+    gap: 0,
+    focusAt: "center",
+  });
+
+  carouselNews.mount();
+
   var tiltableElement = ".glide__container";
 
-  carousel.mount({
+  carouselExhibitions.mount({
     Coverflow: (GlideQ, Components, Events) => {
       var Plugin = {
         tilt(element) {

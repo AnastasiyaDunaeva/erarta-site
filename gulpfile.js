@@ -16,21 +16,21 @@ const gulp = require("gulp"), //система описания задач
       scss: "build/css/",
       js: "build/js/",
       img: "build/img/",
-      font: "build/font"
+      font: "build/font/"
     },
     src: {
       html: "*.html",
       scss: "scss/page_*.scss",
       js: "js/*.js",
       img: "img/*",
-      font: "font/*"
+      font: "font/**/*"
     },
     watch: {
       html: "*.html",
       scss: "scss/**/*.scss",
       js: "js/**/*.js",
       img: "img/*",
-      font: "font/*",
+      font: "font/**/*",
     },
     clean: "build/",
   },

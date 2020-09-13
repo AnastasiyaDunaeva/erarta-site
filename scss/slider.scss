@@ -17,26 +17,16 @@
 .glide__container {
   border: 2px solid #3f3f3f54;
   border-radius: 4px;
-  width: 240px;
-  height: 240px;
-  /*transition: all 500ms ease;*/
-  /*will-change: transform;*/
-  /*transform-style: preserve-3d;*/
-  /*position: relative;*/
-  /*overflow: hidden;*/
-
+  width: 18vmax;
+  height: 21vmin;
   position: relative;
   z-index: 0;
-  /*width: 100%;*/
-  /*height: 13.33333rem;*/
   transform-style: preserve-3d;
-  /*transition: -webkit-transform 1s ease-in-out;*/
   transition: transform 0.35s ease-in-out, opacity 0.7s linear,
   filter 0.7s linear;
-  /*width .55s ease-in-out, height .55s ease-in-out;*/
-  /*transition: transform 1s ease-in-out,-webkit-transform 1s ease-in-out;*/
   transform-origin: 50% 50%;
   will-change: transform;
+  margin-bottom: 100px;
 }
 
 .glide__slide--active {
@@ -60,8 +50,7 @@
 }
 
 .glide__container img {
-  /*max-width: 100%;*/
-  max-height: 100%;
+  max-width: 100%;
 }
 
 .glide__container .rside {
@@ -105,15 +94,4 @@
 
 .glide__arrow:hover {
   padding: 40px;
-  /*opacity: 1;*/
 }
-//
-//.glide__arrow--prev {
-//  left: 0;
-//  cursor: url("img/arrowLeft.png"), pointer;
-//}
-//
-//.glide__arrow--next {
-//  right: 0;
-//  cursor: url("img/arrowRight.png"), pointer;
-//}
