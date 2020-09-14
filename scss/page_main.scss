@@ -167,6 +167,12 @@ header {
     height: 23.828px;
     margin-left: 45px;
     transition: margin-left 0.4s linear;
+    & path {
+      fill: none;
+      stroke-width: 2px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
   }
   &:hover {
     color: $grey-3;

@@ -31,27 +31,6 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <svg class="hidden">
-            <defs>
-              <filter id="filter-1">
-                <feTurbulence
-                  type="fractalNoise"
-                  baseFrequency="0"
-                  numOctaves="1"
-                  result="warp"
-                />
-                <feOffset dx="-90" result="warpOffset" />
-                <feDisplacementMap
-                  xChannelSelector="R"
-                  yChannelSelector="G"
-                  scale="30"
-                  in="SourceGraphic"
-                  in2="warpOffset"
-                />
-              </filter>
-            </defs>
-          </svg>
-
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto menu menu--line">
               <li class="nav-item dropdown">
@@ -169,7 +148,18 @@
           <a href="#" class="arrow-link">
             Смотреть все события
             <svg class="arrow-link--icon" viewBox="0 0 102 23.828">
-              <use xlink:href="#Icon_feather-arrow-right" />
+              <g transform="translate(-6.5 -6.086)">
+                <path
+                  d="M7.5,18h100"
+                  transform="translate(0)"
+                  stroke="currentColor"
+                />
+                <path
+                  d="M18,7.5,28.5,18,18,28.5"
+                  transform="translate(79)"
+                  stroke="currentColor"
+                />
+              </g>
             </svg>
           </a>
         </div>
@@ -274,7 +264,14 @@
           <a href="#" class="arrow-link">
             Подробнее
             <svg class="arrow-link--icon" viewBox="0 0 102 23.828">
-              <use xlink:href="#Icon_feather-arrow-right" />
+              <g transform="translate(-6.5 -6.086)">
+                <path d="M7.5,18h100" stroke="currentColor" />
+                <path
+                  d="M18,7.5,28.5,18,18,28.5"
+                  transform="translate(79)"
+                  stroke="currentColor"
+                />
+              </g>
             </svg>
           </a>
         </div>
@@ -315,7 +312,14 @@
           <a href="#" class="arrow-link">
             Подробнее
             <svg class="arrow-link--icon" viewBox="0 0 102 23.828">
-              <use xlink:href="#Icon_feather-arrow-right" />
+              <g transform="translate(-6.5 -6.086)">
+                <path d="M7.5,18h100" stroke="currentColor" />
+                <path
+                  d="M18,7.5,28.5,18,18,28.5"
+                  transform="translate(79)"
+                  stroke="currentColor"
+                />
+              </g>
             </svg>
           </a>
         </div>
@@ -518,37 +522,6 @@
         <div class="painter"></div>
       </footer>
     </div>
-
-    <svg class="d-none">
-      <g
-        id="Icon_feather-arrow-right"
-        data-name="Icon feather-arrow-right"
-        transform="translate(-6.5 -6.086)"
-      >
-        <path
-          id="Path_5"
-          data-name="Path 5"
-          d="M7.5,18h100"
-          transform="translate(0)"
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-        />
-        <path
-          id="Path_6"
-          data-name="Path 6"
-          d="M18,7.5,28.5,18,18,28.5"
-          transform="translate(79)"
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-        />
-      </g>
-    </svg>
 
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/jquery.mobile.custom.min.js"></script>
