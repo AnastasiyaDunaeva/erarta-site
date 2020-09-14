@@ -14,98 +14,136 @@
   </head>
   <body>
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"
-          ><img src="img/logo.svg" alt="logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#"
+            ><img src="img/logo.svg" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <svg class="hidden">
-          <defs>
-            <filter id="filter-1">
-              <feTurbulence
-                type="fractalNoise"
-                baseFrequency="0"
-                numOctaves="1"
-                result="warp"
-              />
-              <feOffset dx="-90" result="warpOffset" />
-              <feDisplacementMap
-                xChannelSelector="R"
-                yChannelSelector="G"
-                scale="30"
-                in="SourceGraphic"
-                in2="warpOffset"
-              />
-            </filter>
-          </defs>
-        </svg>
+          <svg class="hidden">
+            <defs>
+              <filter id="filter-1">
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0"
+                  numOctaves="1"
+                  result="warp"
+                />
+                <feOffset dx="-90" result="warpOffset" />
+                <feDisplacementMap
+                  xChannelSelector="R"
+                  yChannelSelector="G"
+                  scale="30"
+                  in="SourceGraphic"
+                  in2="warpOffset"
+                />
+              </filter>
+            </defs>
+          </svg>
 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav mr-auto menu menu--line">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link chevron-down menu__link menu__link--1"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Музей
-                <img src="img/chevron-down.svg" alt="" width="16" height="16" />
-              </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <a class="dropdown-item" href="#">О музее</a>
-                <a class="dropdown-item" href="#">Экскурсии</a>
-                <a class="dropdown-item" href="#">Коллекция</a>
-                <a class="dropdown-item" href="#">Только в Эрарте</a>
-                <a class="dropdown-item" href="#">Ресторан</a>
-                <a class="dropdown-item" href="#">Магазин</a>
-                <a class="dropdown-item" href="#">Часто задаваемые вопросы</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link menu__link menu__link--1"
-                href="exhibitions.html"
-                >Выставки</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link menu__link menu__link--1" href="#">Билеты</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link menu__link menu__link--1" href="#">Контакты</a>
-            </li>
-            <li class="nav-item">
-              <img src="img/search.svg" alt="" width="27" height="27" />
-            </li>
-          </ul>
-          <div class="my-2 my-lg-0 text-s">
-            <img src="img/clock.svg" alt="" width="25" height="25" />
-            сегодня музей работает до 22:00
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto menu menu--line">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link chevron-down menu__link menu__link--1"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Музей
+                  <img
+                    src="img/chevron-down.svg"
+                    alt=""
+                    width="16"
+                    height="16"
+                  />
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <ul>
+                    <li class="dropdown-item">
+                      <a class="nav-link menu__link menu__link--1" href="#"
+                        >О музее</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a class="nav-link menu__link menu__link--1" href="#"
+                        >Экскурсии</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a class="nav-link menu__link menu__link--1" href="#"
+                        >Коллекция</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a class="nav-link menu__link menu__link--1" href="#"
+                        >Только в Эрарте</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a class="nav-link menu__link menu__link--1" href="#"
+                        >Ресторан</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a class="nav-link menu__link menu__link--1" href="#"
+                        >Магазин</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a class="nav-link menu__link menu__link--1" href="#"
+                        >Часто задаваемые вопросы</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link menu__link menu__link--1"
+                  href="exhibitions.html"
+                  >Выставки</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu__link menu__link--1" href="#">Билеты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu__link menu__link--1" href="#"
+                  >Контакты</a
+                >
+              </li>
+              <li class="nav-item">
+                <img src="img/search.svg" alt="" width="27" height="27" />
+              </li>
+            </ul>
+            <div class="my-2 my-lg-0 text-s">
+              <img src="img/clock.svg" alt="" width="25" height="25" />
+              сегодня музей работает до 22:00
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </header>
 
       <div class="jumbotron">
-        <div class="row">
-          <div class="col-md-1 col-lg-1"></div>
+        <div class="row justify-content-center">
           <div class="col-md-10 col-lg-10">
             <div class="main-heading-content">
               <div class="text-l text-bold">С 3 сентября</div>
@@ -114,14 +152,11 @@
               <h2 class="main-heading col-lg-8 col-md-8">The bounty killart</h2>
             </div>
           </div>
-          <div class="col-md-1 col-lg-1"></div>
         </div>
-        <div class="row">
-          <div class="col-md-1 col-lg-1"></div>
+        <div class="row justify-content-start">
           <div class="col-lg-7 col-md-7 button-wrap-center">
             <button class="button-main">Подробнее</button>
           </div>
-          <div class="col-md-1 col-lg-1"></div>
         </div>
         <div class="main-slide float-right">
           <img class="img-fluid" src="img/main-slide-1.jpg" alt="" />
@@ -129,17 +164,18 @@
         </div>
       </div>
 
-      <div class="row heading-row">
-        <div class="col-md-1 col-lg-1"></div>
+      <div class="row heading-row justify-content-center">
         <div class="col-md-5 col-lg-5 d-flex align-items-center">
           <a href="#" class="arrow-link">
-            Смотреть все события <img src="img/arrow-right.svg" alt="" />
+            Смотреть все события
+            <svg class="arrow-link--icon" viewBox="0 0 102 23.828">
+              <use xlink:href="#Icon_feather-arrow-right" />
+            </svg>
           </a>
         </div>
         <div class="col-lg-5">
           <h2 class="heading-red float-right">Выставки</h2>
         </div>
-        <div class="col-md-1 col-lg-1"></div>
       </div>
 
       <div class="glide glide-exhibitions">
@@ -154,81 +190,63 @@
             </li>
             <li class="glide__slide">
               <div class="glide__container">
-                <div>
-                  <img src="img/02.jpg" alt="" />
-                </div>
+                <img src="img/02.jpg" alt="" />
                 <div class="rside"></div>
                 <div class="lside"></div>
               </div>
             </li>
             <li class="glide__slide">
               <div class="glide__container">
-                <div>
-                  <img src="img/03.jpg" alt="" />
-                </div>
+                <img src="img/03.jpg" alt="" />
                 <div class="rside"></div>
                 <div class="lside"></div>
               </div>
             </li>
             <li class="glide__slide">
               <div class="glide__container">
-                <div>
-                  <img src="img/04.jpg" alt="" />
-                </div>
+                <img src="img/04.jpg" alt="" />
                 <div class="rside"></div>
                 <div class="lside"></div>
               </div>
             </li>
             <li class="glide__slide">
               <div class="glide__container">
-                <div>
-                  <img src="img/05.jpg" alt="" />
-                </div>
+                <img src="img/05.jpg" alt="" />
                 <div class="rside"></div>
                 <div class="lside"></div>
               </div>
             </li>
             <li class="glide__slide">
               <div class="glide__container">
-                <div>
-                  <img src="img/06.jpg" alt="" />
-                </div>
+                <img src="img/06.jpg" alt="" />
                 <div class="rside"></div>
                 <div class="lside"></div>
               </div>
             </li>
             <li class="glide__slide">
               <div class="glide__container">
-                <div>
-                  <img src="img/07.png" alt="" />
-                </div>
+                <img src="img/07.png" alt="" />
                 <div class="rside"></div>
                 <div class="lside"></div>
               </div>
             </li>
             <li class="glide__slide">
               <div class="glide__container">
-                <div>
-                  <img src="img/08.jpg" alt="" />
-                </div>
+                <img src="img/08.jpg" alt="" />
                 <div class="rside"></div>
                 <div class="lside"></div>
               </div>
             </li>
             <li class="glide__slide">
               <div class="glide__container">
-                <div>
-                  <img src="img/09.jpg" alt="" />
-                </div>
+                <img src="img/09.jpg" alt="" />
                 <div class="rside"></div>
                 <div class="lside"></div>
               </div>
             </li>
             <li class="glide__slide">
               <div class="glide__container">
-                <div>
-                  <img src="img/10.jpg" alt="" />
-                </div>
+                <img src="img/10.jpg" alt="" />
                 <div class="rside"></div>
                 <div class="lside"></div>
               </div>
@@ -236,33 +254,46 @@
           </ul>
         </div>
         <div class="glide__arrows" data-glide-el="controls">
-          <div class="glide__arrow glide__arrow--prev" data-glide-dir="<"></div>
-          <div class="glide__arrow glide__arrow--next" data-glide-dir=">"></div>
+          <img
+            class="glide__arrow glide__arrow--prev"
+            data-glide-dir="<"
+            src="img/arrow-right.svg"
+            alt=""
+          />
+          <img
+            class="glide__arrow glide__arrow--next"
+            data-glide-dir="<"
+            src="img/arrow-right.svg"
+            alt=""
+          />
         </div>
       </div>
 
-      <div class="row heading-row">
-        <div class="col-md-1 col-lg-1"></div>
+      <div class="row heading-row justify-content-center">
         <div class="col-md-5 col-lg-5 d-flex align-items-center">
           <a href="#" class="arrow-link">
-            Подробнее <img src="img/arrow-right.svg" alt="" />
+            Подробнее
+            <svg class="arrow-link--icon" viewBox="0 0 102 23.828">
+              <use xlink:href="#Icon_feather-arrow-right" />
+            </svg>
           </a>
         </div>
         <div class="col-lg-5">
           <h2 class="heading-red float-right">Билеты</h2>
         </div>
-        <div class="col-md-1 col-lg-1"></div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-1"></div>
+      <div class="row justify-content-center">
         <div class="col-sm-12 col-md-12 col-lg-5">
           <div class="ticket">
             <div class="ticket-description text-l">
               Более 40 выставок в год по одному билету
             </div>
             <img class="img-fluid" src="img/ticket.png" alt="Билет" />
-            <div><span class="ticket-name text-l">Билет </span><span class="ticket-price text-l">800 руб</span></div>
+            <div>
+              <span class="ticket-name text-l">Билет </span
+              ><span class="ticket-price text-l">800 руб</span>
+            </div>
           </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-5">
@@ -271,41 +302,44 @@
               Более 40 выставок в год по одному билету
             </div>
             <img class="img-fluid" src="img/ticket.png" alt="Билет" />
-            <div><span class="ticket-name text-l">Билет </span><span class="ticket-price text-l">800 руб</span></div>
+            <div>
+              <span class="ticket-name text-l">Билет </span
+              ><span class="ticket-price text-l">800 руб</span>
+            </div>
           </div>
         </div>
-        <div class="col-lg-1"></div>
       </div>
 
-      <div class="row heading-row">
-        <div class="col-md-1 col-lg-1"></div>
+      <div class="row heading-row justify-content-center">
         <div class="col-md-5 col-lg-5 d-flex align-items-center">
           <a href="#" class="arrow-link">
-            Подробнее <img src="img/arrow-right.svg" alt="" />
+            Подробнее
+            <svg class="arrow-link--icon" viewBox="0 0 102 23.828">
+              <use xlink:href="#Icon_feather-arrow-right" />
+            </svg>
           </a>
         </div>
         <div class="col-lg-5">
           <h2 class="heading-red float-right">О музее</h2>
         </div>
-        <div class="col-md-1 col-lg-1"></div>
       </div>
 
-      <div class="row">
-        <div class="col-md-1 col-lg-1"></div>
+      <div class="row justify-content-center">
         <div class="col-md-10 col-lg-10">
           <div class="about">
-            Эрарта — крупнейший в России частный музей современного искусства. Его коллекция насчитывает более 2800
-            работ российских художников. Ежегодно в музее проходит свыше 40 временных выставок.
-            Музей современного искусства Эрарта был неоднократно включен в список интересных достопримечательностей
-            крупнейшего путеводителя в мире Lonely Planet, по мнению туристического портала TripAdvisor вошел
-            в десятку лучших музеев России, отмечен National Geographic в пятерке музеев Санкт-Петербурга, обязательных
-            к посещению, и стал первым в стране музеем современного искусства, представленным на
-            Google Arts and Culture Project.
+            Эрарта — крупнейший в России частный музей современного искусства.
+            Его коллекция насчитывает более 2800 работ российских художников.
+            Ежегодно в музее проходит свыше 40 временных выставок. Музей
+            современного искусства Эрарта был неоднократно включен в список
+            интересных достопримечательностей крупнейшего путеводителя в мире
+            Lonely Planet, по мнению туристического портала TripAdvisor вошел в
+            десятку лучших музеев России, отмечен National Geographic в пятерке
+            музеев Санкт-Петербурга, обязательных к посещению, и стал первым в
+            стране музеем современного искусства, представленным на Google Arts
+            and Culture Project.
           </div>
         </div>
-        <div class="col-md-1 col-lg-1"></div>
       </div>
-
 
       <div class="glide glide-news">
         <div data-glide-el="track" class="glide__track">
@@ -317,80 +351,204 @@
             </li>
             <li class="glide__slide">
               <div class="glide__container">
-                <div>
-                  <img src="img/02.jpg" alt="" />
-                </div>
+                <img src="img/02.jpg" alt="" />
               </div>
             </li>
             <li class="glide__slide">
               <div class="glide__container">
-                <div>
-                  <img src="img/03.jpg" alt="" />
-                </div>
+                <img src="img/03.jpg" alt="" />
               </div>
             </li>
             <li class="glide__slide">
               <div class="glide__container">
-                <div>
-                  <img src="img/04.jpg" alt="" />
-                </div>
+                <img src="img/04.jpg" alt="" />
               </div>
             </li>
             <li class="glide__slide">
               <div class="glide__container">
-                <div>
-                  <img src="img/05.jpg" alt="" />
-                </div>
+                <img src="img/05.jpg" alt="" />
               </div>
             </li>
             <li class="glide__slide">
               <div class="glide__container">
-                <div>
-                  <img src="img/06.jpg" alt="" />
-                </div>
+                <img src="img/06.jpg" alt="" />
               </div>
             </li>
             <li class="glide__slide">
               <div class="glide__container">
-                <div>
-                  <img src="img/07.png" alt="" />
-                </div>
+                <img src="img/07.png" alt="" />
               </div>
             </li>
             <li class="glide__slide">
               <div class="glide__container">
-                <div>
-                  <img src="img/08.jpg" alt="" />
-                </div>
+                <img src="img/08.jpg" alt="" />
               </div>
             </li>
             <li class="glide__slide">
               <div class="glide__container">
-                <div>
-                  <img src="img/09.jpg" alt="" />
-                </div>
+                <img src="img/09.jpg" alt="" />
               </div>
             </li>
             <li class="glide__slide">
               <div class="glide__container">
-                <div>
-                  <img src="img/10.jpg" alt="" />
-                </div>
+                <img src="img/10.jpg" alt="" />
               </div>
             </li>
           </ul>
         </div>
         <div class="glide__arrows" data-glide-el="controls">
-          <div class="glide__arrow glide__arrow--prev" data-glide-dir="<"></div>
-          <div class="glide__arrow glide__arrow--next" data-glide-dir=">"></div>
+          <img
+            class="glide__arrow glide__arrow--prev"
+            data-glide-dir="<"
+            src="img/arrow-right.svg"
+            alt=""
+          />
+          <img
+            class="glide__arrow glide__arrow--next"
+            data-glide-dir="<"
+            src="img/arrow-right.svg"
+            alt=""
+          />
         </div>
       </div>
 
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <form class="subscribe" action="#">
+            <label class="subscribe-title text-xl" for="subscribe-email"
+              >Подпишитесь на новости</label
+            >
+            <div class="subscribe-input-wrapper">
+              <input
+                class="subscribe-email"
+                id="subscribe-email"
+                type="text"
+                placeholder="e-mail"
+              />
+              <button class="subscribe-submit" type="submit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="45.841"
+                  height="45.255"
+                  viewBox="0 0 45.841 45.255"
+                >
+                  <g transform="translate(22.627 -2.829) rotate(45)">
+                    <path
+                      d="M33,3,16.5,19.5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M33,3,22.5,33l-6-13.5L3,13.5Z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
 
-      <footer style="height: 1000px">
+      <hr />
+
+      <footer>
+        <div class="row justify-content-start">
+          <div class="col-md-3 col-lg-3">
+            <div class="footer-contacts">
+              <a class="navbar-brand" href="#"
+                ><img src="img/logo.svg" alt="logo"
+              /></a>
+              <div class="footer-contacts-address">Санкт-Петербург,</div>
+              <div class="footer-contacts-address">29 линия В.О., 2</div>
+              <div class="footer-contacts-phone">+7 812 324 08 09</div>
+              <div class="footer-contacts-social">
+                <a href=""><img src="img/social-fb.svg" alt="" /> </a>
+                <a href=""><img src="img/social-vk.svg" alt="" /></a>
+                <a href=""><img src="img/social-tw.svg" alt="" /></a>
+                <a href=""><img src="img/social-yt.svg" alt="" /></a>
+                <a href=""><img src="img/social-in.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3">
+            <nav class="footer-nav">
+              <ul class="navbar-nav mr-auto menu--line">
+                <li class="nav-item">
+                  <a class="nav-link menu__link menu__link--1" href="#"
+                    >О музее</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu__link menu__link--1" href="#"
+                    >Новости</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu__link menu__link--1" href="#"
+                    >Вакансии</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu__link menu__link--1" href="#"
+                    >Обратная связь</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu__link menu__link--1" href="#"
+                    >Контакты</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu__link menu__link--1" href="#"
+                    >Отзывы</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
         <div class="painter"></div>
       </footer>
     </div>
+
+    <svg class="d-none">
+      <g
+        id="Icon_feather-arrow-right"
+        data-name="Icon feather-arrow-right"
+        transform="translate(-6.5 -6.086)"
+      >
+        <path
+          id="Path_5"
+          data-name="Path 5"
+          d="M7.5,18h100"
+          transform="translate(0)"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+        />
+        <path
+          id="Path_6"
+          data-name="Path 6"
+          d="M18,7.5,28.5,18,18,28.5"
+          transform="translate(79)"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+        />
+      </g>
+    </svg>
 
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/jquery.mobile.custom.min.js"></script>

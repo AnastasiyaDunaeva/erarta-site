@@ -6,7 +6,6 @@
 
 @import "partials/layout"; // responsive grid and media queries
 
-//@import "../node_modules/@glidejs/glide/dist/css/glide.core.min.css";
 @import "menuLink";
 @import "slider";
 @import "painter";
@@ -18,6 +17,33 @@ body {
   font-family: "PTRootUIWebRegular", Arial, sans-serif;
   font-size: 30px;
   color: $grey-1;
+  margin-top: 125px;
+}
+
+input {
+  font-family: "PTRootUIWebRegular", Arial, sans-serif;
+  font-size: 30px;
+  color: $grey-1;
+  border-color: $grey-1;
+  border-style: solid;
+  &:active {
+    border-color: $grey-0;
+  }
+}
+
+hr {
+  width: 75%;
+  border-color: $grey-3;
+  margin: 125px auto;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 1000;
 }
 
 .navbar {
@@ -46,6 +72,10 @@ body {
 
 .text-l {
   font-size: 40px;
+}
+
+.text-xl {
+  font-size: 60px;
 }
 
 .text-xxl {
@@ -127,19 +157,94 @@ body {
   font-size: 100px;
   color: $red;
   padding: 100px 80px;
+  margin: 0;
 }
 
 .arrow-link {
   color: $grey-1;
-  & img {
-    margin-left: 65px;
+  &--icon {
+    width: 102px;
+    height: 23.828px;
+    margin-left: 45px;
+    transition: margin-left 0.4s linear;
   }
   &:hover {
     color: $grey-3;
     text-decoration: none;
+    & .arrow-link--icon {
+      margin-left: 65px;
+    }
   }
 }
 
 .about {
+  margin-bottom: 160px;
+}
 
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  &-input-wrapper {
+    position: relative;
+    max-width: 650px;
+    width: 50%;
+  }
+  &-title {
+    margin-bottom: 20px;
+  }
+  &-email {
+    width: 100%;
+    padding: 12px 24px;
+  }
+  &-submit {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: $grey-1;
+    transition: color 0.2s linear;
+    &:hover {
+      color: $grey-3;
+    }
+  }
+}
+
+footer {
+  position: relative;
+  padding: 50px 0;
+  & .footer {
+    &-contacts {
+      padding: 40px 35px 10px;
+
+      & .navbar-brand {
+        margin-bottom: 150px;
+      }
+      &-phone {
+        font-weight: bold;
+        margin: 50px 0;
+      }
+      &-social {
+        display: flex;
+        & a {
+          padding: 0 6px;
+        }
+      }
+    }
+    &-nav {
+      margin-top: 250px;
+    }
+  }
+
+  & .painter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 630px;
+    width: 50%;
+    background: #88d4e3;
+  }
 }
