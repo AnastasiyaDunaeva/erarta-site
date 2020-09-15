@@ -222,9 +222,11 @@ header {
 footer {
   position: relative;
   padding: 50px 0;
+  height: 700px;
+  overflow: hidden;
   & .footer {
     &-contacts {
-      padding: 40px 35px 10px;
+      padding: 0 35px 10px;
 
       & .navbar-brand {
         margin-bottom: 150px;
@@ -241,16 +243,173 @@ footer {
       }
     }
     &-nav {
-      margin-top: 250px;
+      margin-top: 200px;
     }
   }
 
   & .painter {
     position: absolute;
-    top: 0;
+    top: 50px;
     right: 0;
-    height: 630px;
-    width: 50%;
-    background: #88d4e3;
+    height: 600px;
+
+    & .cls-1 {
+      fill: #ff89a5;
+    }
+    & .cls-6 {
+      fill: #ffaec0;
+    }
+    & .cls-16 {
+      fill: #ffa8bc;
+    }
+    & .cls-2 {
+      fill: #cee6ea;
+    }
+    & .cls-12 {
+      fill: #a8d0db;
+    }
+    & .cls-3 {
+      fill: #7eb0bc;
+    }
+    & .cls-11 {
+      fill: #3d8184;
+    }
+    & .cls-14 {
+      fill: #0b3354;
+    }
+    & .cls-15 {
+      fill: #386fa5;
+    }
+    & .cls-5 {
+      fill: #d1d1d1;
+    }
+    & .cls-8 {
+      fill: #f1f1f1;
+    }
+    & .cls-4 {
+      fill: url(#linear-gradient);
+    }
+    & .cls-18 {
+      fill: url(#linear-gradient-3);
+    }
+    & .cls-10 {
+      fill: #353535;
+    }
+    & .cls-19 {
+      fill: #febd6a;
+    }
+
+    &-inner {
+      position: relative;
+      margin-right: 8vw;
+      min-width: 790px;
+    }
+    &-body {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 600px;
+    }
+    &-head {
+      width: 115px;
+      position: absolute;
+      top: 0;
+      left: 438px;
+      transform-origin: center;
+      animation: headPainter 6s linear infinite;
+    }
+    &-hand {
+      width: 235px;
+      position: absolute;
+      top: 110px;
+      left: 323px;
+      animation: handPainter 5s linear infinite;
+    }
+    &-bird {
+      width: 66px;
+      position: absolute;
+      top: 58px;
+      left: 234px;
+      animation: birdPainter 6s linear infinite;
+    }
+    &-cloud-1 {
+      width: 90px;
+      position: absolute;
+      top: 0;
+      left: 900px;
+      animation: cloudPainter 35s linear infinite;
+      & path {
+        transform: scaleX(-1) translate(-100%);
+      }
+    }
+    &-cloud-2 {
+      width: 70px;
+      position: absolute;
+      top: 30px;
+      left: 900px;
+      animation: cloudPainter 25s 15s linear infinite;
+    }
+  }
+}
+
+@keyframes headPainter {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(10deg) translateX(5px);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes handPainter {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes birdPainter {
+  0% {
+    transform: translateY(0);
+  }
+  1.5% {
+    transform: translateY(-30px);
+  }
+  3% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes cloudPainter {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-950px);
   }
 }
