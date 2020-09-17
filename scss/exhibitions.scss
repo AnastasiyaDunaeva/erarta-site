@@ -1,1 +1,76 @@
 @import "partials/common";
+
+.grid {
+  margin-bottom: 100px;
+}
+
+.grid::after{
+  content: "";
+  clear:both;
+  display: table;
+}
+.grid-item{
+  width: 25%;
+  height: 400px;
+  float: left;
+  padding: 10px;
+}
+
+.card {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.card__img {
+  object-fit: cover;
+  max-width:100%;
+  height: 70%;
+}
+
+.card:after {
+  content: "";
+  display: inline-block;
+  background: linear-gradient(rgba(15,101,130,.3),rgba(44,80,177,.3));
+  height: 70%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card__info {
+  height: 30%;
+}
+
+.card__type {
+  padding: 5px 5px 5px 10px;
+  background: linear-gradient(rgba(15,101,130,.6), rgba(44, 80, 177, .6));
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  color: #fff;
+
+}
+
+.card__desc {
+  padding: 10px 10px 20px 10px;
+
+}
+
+.button-group {
+  display: flex;
+  margin: 10px 0 5px 10px;
+
+}
+
+.btn-filter {
+  background: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 0 5px 0 5px;
+  border: none;
+  box-shadow: 5px 5px 25px rgba(61, 31, 213, 0.1);
+}
+
+.btn-filter:hover {
+  background: linear-gradient(rgba(15,101,130,.1), rgba(44, 80, 177, .1));
+}

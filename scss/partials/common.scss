@@ -8,14 +8,14 @@
 @import "painter";
 
 body {
-  font-family: "PTRootUIWebRegular", Arial, sans-serif;
+  font-family: $main-font;
   font-size: 30px;
   color: $grey-1;
   margin-top: 125px;
 }
 
 input {
-  font-family: "PTRootUIWebRegular", Arial, sans-serif;
+  font-family: $main-font;
   font-size: 30px;
   color: $grey-1;
   border-color: $grey-1;

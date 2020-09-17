@@ -8,9 +8,347 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Часто задаваемые вопросы</title>
+    <link rel="stylesheet" href="css/faq.css" />
   </head>
   <body>
-    <a href="index.html">Главная</a>
-    <h1>Часто задаваемые вопросы</h1>
+    <div class="container-fluid">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html"
+            ><img src="img/logo.svg" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto menu menu--line">
+              <li class="nav-item dropdown">
+                <span
+                  class="nav-link chevron-down menu__link menu__link--1"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Музей
+                  <img
+                    src="img/chevron-down.svg"
+                    alt=""
+                    width="16"
+                    height="16"
+                  />
+                </span>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <ul>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="about.html"
+                        >О музее</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="excursions.html"
+                        >Экскурсии</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="collections.html"
+                        >Коллекция</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="only.html"
+                        >Только в Эрарте</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="restaurant.html"
+                        >Ресторан</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="shop.html"
+                        >Магазин</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="faq.html"
+                        >Часто задаваемые вопросы</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="faq.html"
+                        >План музея</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link menu__link menu__link--1"
+                  href="exhibitions.html"
+                  >Выставки</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu__link menu__link--1" href="tickets.html"
+                  >Билеты</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link menu__link menu__link--1"
+                  href="contacts.html"
+                  >Контакты</a
+                >
+              </li>
+              <li class="nav-item">
+                <img src="img/search.svg" alt="" width="27" height="27" />
+              </li>
+            </ul>
+            <div class="my-2 my-lg-0 text-s">
+              <img src="img/clock.svg" alt="" width="25" height="25" />
+              сегодня музей работает до 22:00
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="row heading-row justify-content-end">
+          <div class="col-lg-5">
+            <h2 class="heading-red float-right">FAQ</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="faq" id="faq">
+              <div class="faq__item">
+                <div
+                  class="faq__header collapsed"
+                  id="question1"
+                  data-toggle="collapse"
+                  data-target="#answer1"
+                  aria-expanded="false"
+                  aria-controls="answer1"
+                >
+                  Какое искусство можно увидеть в Эрарте?
+                </div>
+                <div
+                  class="faq__desc collapse"
+                  id="answer1"
+                  aria-labelledby="question1"
+                  data-parent="#faq"
+                >
+                  В Эрарте можно увидеть современное искусство сегмента
+                  contemporary art (созданное с 1945 года по настоящее время).
+                  Его не нужно путать с modern art (1860–1945), ярчайшими
+                  представителями которого являются Пикассо, Шагал, Малевич и
+                  Кандинский. В modern art основными жанрами и техниками
+                  являются живопись, коллаж, скульптура и объект — все они также
+                  представлены в contemporary art, где к ним еще добавились
+                  видеоарт, сайнс-арт и другие новые виды искусства. Со временем
+                  contemporary art становится классикой — как случилось с
+                  творчеством, например, Энди Уорхола. Многие из работ в
+                  коллекции Эрарты, в большинстве своем созданные ныне живущими
+                  российскими авторами, тоже имеют все шансы войти в историю
+                  искусства, потому что они талантливы и глубоки, их авторам
+                  есть что сказать людям, и этот внутренний посыл обязательно
+                  найдет отклик как у наших сегодняшних зрителей, так и у
+                  последующих поколений. В нашей коллекции нет ни одной работы,
+                  о которой мы не могли бы сказать, за что ее любим и почему
+                  считаем ее талантливой.
+                </div>
+              </div>
+              <div class="faq__item">
+                <div
+                  class="faq__header collapsed"
+                  data-toggle="collapse"
+                  data-target="#answer2"
+                  aria-expanded="false"
+                  aria-controls="answer2"
+                >
+                  Как понять современное искусство если оно мне не близко?
+                </div>
+                <div
+                  class="faq__desc collapse"
+                  id="answer2"
+                  aria-labelledby="question2"
+                  data-parent="#faq"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Fugit, explicabo saepe at perspiciatis libero commodi
+                  temporibus deserunt rem reiciendis odit consequuntur nisi non
+                  vero quaerat fuga suscipit et cum rerum.
+                </div>
+              </div>
+              <div class="faq__item">
+                <div
+                  class="faq__header collapsed"
+                  data-toggle="collapse"
+                  data-target="#answer3"
+                  aria-expanded="false"
+                  aria-controls="answer3"
+                >
+                  Можно ли в музее фотографировать или снимать видео?
+                </div>
+                <div
+                  class="faq__desc collapse"
+                  id="answer3"
+                  aria-labelledby="question3"
+                  data-parent="#faq"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad
+                  blanditiis aperiam totam quae dolor omnis inventore dolore.
+                  Dignissimos necessitatibus, ipsa illum. Vero amet soluta
+                  necessitatibus possimus, iusto adipisci temporibus.
+                </div>
+              </div>
+              <div class="faq__item">
+                <div
+                  class="faq__header collapsed"
+                  data-toggle="collapse"
+                  data-target="#answer4"
+                  aria-expanded="false"
+                  aria-controls="answer4"
+                >
+                  Где можно поесть во время визита в музей?
+                </div>
+                <div
+                  class="faq__desc collapse"
+                  id="answer4"
+                  aria-labelledby="question4"
+                  data-parent="#faq"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad
+                  blanditiis aperiam totam quae dolor omnis inventore dolore.
+                  Dignissimos necessitatibus, ipsa illum. Vero amet soluta
+                  necessitatibus possimus, iusto adipisci temporibus.
+                </div>
+              </div>
+              <div class="faq__item">
+                <div
+                  class="faq__header collapsed"
+                  data-toggle="collapse"
+                  data-target="#answer5"
+                  aria-expanded="false"
+                  aria-controls="answer5"
+                >
+                  Как музей работает в праздничные дни?
+                </div>
+                <div
+                  class="faq__desc collapse"
+                  id="answer5"
+                  aria-labelledby="question5"
+                  data-parent="#faq"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad
+                  blanditiis aperiam totam quae dolor omnis inventore dolore.
+                  Dignissimos necessitatibus, ipsa illum. Vero amet soluta
+                  necessitatibus possimus, iusto adipisci temporibus.
+                </div>
+              </div>
+              <div class="faq__item">
+                <div
+                  class="faq__header collapsed"
+                  data-toggle="collapse"
+                  data-target="#answer6"
+                  aria-expanded="false"
+                  aria-controls="answer6"
+                >
+                  Как посетить музей туристической группе?
+                </div>
+                <div
+                  class="faq__desc collapse"
+                  id="answer6"
+                  aria-labelledby="question5"
+                  data-parent="#faq"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad
+                  blanditiis aperiam totam quae dolor omnis inventore dolore.
+                  Dignissimos necessitatibus, ipsa illum. Vero amet soluta
+                  necessitatibus possimus, iusto adipisci temporibus.
+                </div>
+              </div>
+              <div class="faq__item">
+                <div
+                  class="faq__header collapsed"
+                  data-toggle="collapse"
+                  data-target="#answer7"
+                  aria-expanded="false"
+                  aria-controls="answer7"
+                >
+                  Где на время визита в музей оставить велосипед/самокат/чемодан?
+                </div>
+                <div
+                  class="faq__desc collapse"
+                  id="answer7"
+                  aria-labelledby="question5"
+                  data-parent="#faq"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad
+                  blanditiis aperiam totam quae dolor omnis inventore dolore.
+                  Dignissimos necessitatibus, ipsa illum. Vero amet soluta
+                  necessitatibus possimus, iusto adipisci temporibus.
+                </div>
+              </div>
+              <div class="faq__item">
+                <div
+                  class="faq__header collapsed"
+                  data-toggle="collapse"
+                  data-target="#answer8"
+                  aria-expanded="false"
+                  aria-controls="answer8"
+                >
+                  Как добраться до музея?
+                </div>
+                <div
+                  class="faq__desc collapse"
+                  id="answer8"
+                  aria-labelledby="question5"
+                  data-parent="#faq"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad
+                  blanditiis aperiam totam quae dolor omnis inventore dolore.
+                  Dignissimos necessitatibus, ipsa illum. Vero amet soluta
+                  necessitatibus possimus, iusto adipisci temporibus.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/common.js"></script>
   </body>
 </html>

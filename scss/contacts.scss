@@ -1,0 +1,21 @@
+@import "partials/common";
+
+.ymaps-2-1-77-ground-pane {
+  filter: grayscale(1) contrast(1.12);
+}
+
+.ymaps-2-1-77-islets_icon-caption {
+  //font-family: $main-font !important;
+  //max-width: 235px !important;
+  //font-size: 20px !important;
+  display: none;
+}
+
+.ymaps-2-1-77-copyrights-pane {
+  display: none;
+}
+
+.ymaps-2-1-77-svg-icon {
+  background-image: url("../img/location.svg") !important;
+  left: -18px !important;
+}
