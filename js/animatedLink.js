@@ -1,7 +1,6 @@
 //= "../node_modules/jquery/dist/jquery.slim.js"
 //= "../node_modules/gsap/dist/gsap.js"
 
-
 class LinkFx {
   constructor(el) {
     this.DOM = {el: el};
@@ -74,8 +73,8 @@ class LinkFx1 extends LinkFx {
 }
 
 jQuery(document).ready(function ($) {
-  [...document.querySelectorAll("a.menu__link")].forEach((el) => {
-    const fxObj = LinkFx1;
-    fxObj && new fxObj(el);
+  const links = [...document.querySelectorAll("a.menu__link")]
+  links.forEach((el) => {
+    new LinkFx1(el);
   });
 });

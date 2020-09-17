@@ -20,8 +20,8 @@ const gulp = require("gulp"), //система описания задач
     },
     src: {
       html: "*.html",
-      scss: "scss/page_*.scss",
-      js: "js/*.js",
+      scss: "scss/*.scss",
+      js: "js/**/*.js",
       img: "img/*",
       font: "font/**/*"
     },

@@ -1,13 +1,7 @@
 //= "../node_modules/@glidejs/glide/dist/glide.min.js"
 //= "../node_modules/jquery/dist/jquery.slim.js"
-//= "../node_modules/bootstrap/dist/js/bootstrap.bundle.js"
 
 jQuery(document).ready(function ($) {
-  [...document.querySelectorAll("a.menu__link")].forEach((el) => {
-    const fxObj = LinkFx1;
-    fxObj && new fxObj(el);
-  });
-
   var carouselExhibitions = new Glide(".glide-exhibitions", {
     autoplay: 5000,
     type: "slyder",

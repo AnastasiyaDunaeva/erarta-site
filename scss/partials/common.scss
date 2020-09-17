@@ -1,17 +1,11 @@
 @import "reset";
-@import "../node_modules/bourbon/app/assets/stylesheets/bourbon"; // http://bourbon.io/
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-@import "partials/variables"; // colors, font etc...
-
-@import "partials/layout"; // responsive grid and media queries
-
+@import "../../node_modules/bourbon/app/assets/stylesheets/bourbon"; // http://bourbon.io/
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "variables"; // colors, font etc...
+@import "layout"; // responsive grid and media queries
 @import "menuLink";
-@import "slider";
-@import "painter";
 @import "font";
-@import "button";
-@import "ticket";
+@import "painter";
 
 body {
   font-family: "PTRootUIWebRegular", Arial, sans-serif;
@@ -60,6 +54,10 @@ header {
 
 .nav-item {
   padding: 0 25px;
+}
+
+.text-xs {
+  font-size: 12px;
 }
 
 .text-s {
