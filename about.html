@@ -8,22 +8,229 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>О музее</title>
+    <link rel="stylesheet" href="css/about.css" />
   </head>
   <body>
-    <a href="index.html">Главная</a>
-    <h1>О музее</h1>
+    <div class="container-fluid">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html"
+            ><img src="img/logo.svg" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <!--    NUMBER  -->
-    <section>
-      <h1 id="myTargetElement">0</h1>
-    </section>
-    <!--    NUMBER  -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto menu menu--line">
+              <li class="nav-item dropdown">
+                <span
+                  class="nav-link chevron-down menu__link menu__link--1"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Музей
+                  <img
+                    src="img/chevron-down.svg"
+                    alt=""
+                    width="16"
+                    height="16"
+                  />
+                </span>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <ul>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="about.html"
+                        >О музее</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="excursions.html"
+                        >Экскурсии</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="collections.html"
+                        >Коллекция</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="only.html"
+                        >Только в Эрарте</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="restaurant.html"
+                        >Ресторан</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="shop.html"
+                        >Магазин</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="faq.html"
+                        >Часто задаваемые вопросы</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="faq.html"
+                        >План музея</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link menu__link menu__link--1"
+                  href="exhibitions.html"
+                  >Выставки</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu__link menu__link--1" href="tickets.html"
+                  >Билеты</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link menu__link menu__link--1"
+                  href="contacts.html"
+                  >Контакты</a
+                >
+              </li>
+              <li class="nav-item">
+                <img src="img/search.svg" alt="" width="27" height="27" />
+              </li>
+            </ul>
+            <div class="my-2 my-lg-0 text-s">
+              <img src="img/clock.svg" alt="" width="25" height="25" />
+              сегодня музей работает до 22:00
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="row heading-row justify-content-end">
+        <div class="col-lg-5">
+          <h2 class="heading-red float-right">О музее</h2>
+        </div>
+      </div>
+      <main>
+        <div class="row justify-content-center">
+          <div class="col-xl-12 col-xxl-10">
+            <img
+              class="about-img-main img-fluid lazyload"
+              src="img/about.jpg"
+              data-src="img/about@2x.jpg"
+              data-srcset="img/about.jpg, img/about@2x.jpg "
+            />
+          </div>
+        </div>
 
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-lg-11">
+            <h3 class="about-title text-xl">
+              Эрарта — крупнейший музей современного искусства в России
+            </h3>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-11 col-lg-10">
+            <p class="about-text">
+              Название образовано из слов era и arta и означает «время
+              искусства». Музей открылся 30 сентября 2010 года, и с этого
+              момента в его стенах началась интересная и насыщенная жизнь —
+              выставки, экскурсии, театральные постановки, концерты,
+              образовательные мероприятия и многое другое.
+            </p>
+            <p class="about-text">
+              В собрание музея входят произведения, созданные российскими
+              художниками во второй половине XX — начале XXI веков. Собрание
+              насчитывает 2800 единиц хранения — живопись, графика, скульптура,
+              объекты, инсталляции. Музей периодически пополняет свою коллекцию,
+              сотрудничая с художниками, работающими в разных регионах России и
+              представляющими разные поколения и направления в изобразительном
+              искусстве. Летом 2015 года коллекция Эрарты стала доступна онлайн
+              на Google Art Project — крупнейшей интернет-платформе, посредством
+              которой миллионы пользователей получают возможность приобщиться к
+              мировому культурному наследию.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="about-statistics">
+            <div class="about-statistics-item">
+              <span class="about-statistics-number" id="num40">0</span>
+              <span class="about-statistics-desc text-s">Выставок в год</span>
+            </div>
+            <div class="about-statistics-item">
+              <span class="about-statistics-number" id="num2800">0</span>
+              <span class="about-statistics-desc text-s">Работ художников</span>
+            </div>
+            <div class="about-statistics-item">
+              <span class="about-statistics-number" id="num8">0</span>
+              <span class="about-statistics-desc text-s">U-SPACE</span>
+            </div>
+            <div class="about-statistics-item">
+              <span class="about-statistics-number" id="num10k">0</span>
+              <span class="about-statistics-desc text-s"
+                >Кв метров - площадь музея</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-9 col-lg-9 about-video">
+            <iframe
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              allowfullscreen="true"
+              type="text/html"
+              src="https://www.youtube.com/embed/BmGgmWPYU14?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"
+            ></iframe>
+          </div>
+        </div>
+      </main>
 
+      <script src="js/common.js"></script>
+      <script src="js/about.js"></script>
+    </div>
 
-    <script src="js/jquery-2.1.1.js"></script>
-    <script src="js/jquery.mobile.custom.min.js"></script>
-    <!-- Resource jQuery -->
+    <script src="js/common.js"></script>
     <script src="js/mainCarousel.js"></script>
     <script src="js/animatedLink.js"></script>
     <script src="js/countUp.js" type="module"></script>

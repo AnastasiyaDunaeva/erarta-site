@@ -1,1 +1,49 @@
+@import "partials/common";
 @import "partials/menuLink";
+
+.about {
+  &-img-main {
+    width: 100%;
+    margin-bottom: 90px;
+  }
+
+  &-title {
+    margin-bottom: 60px;
+  }
+
+  &-text {
+    margin-bottom: 42px;
+    text-indent: 1em;
+  }
+  &-statistics {
+    margin-top: 70px;
+    display: flex;
+    overflow: hidden;
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 2vw;
+    }
+    &-number {
+      font-size: 9vw;
+      line-height: 8.5vw;
+      font-family: $main-font-caption-bold;
+    }
+    &-desc {
+    }
+  }
+  &-video {
+    position: relative;
+    width: 100%;
+    height: 32vw;
+    margin: 140px 0;
+    & iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

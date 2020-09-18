@@ -1,99 +1,57 @@
 @font-face {
   font-family: "Stapel_CM";
   src: url("../../font/Stapel_Condensed_Medium.otf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "PTRootUIWebLight";
-  //src: url("../font/PTRootUI_Light/PTRootUI_Light.eot");
-  src:
-          //url("../font/PTRootUI_Light/PTRootUI_Light.eot?#iefix")
-      //format("embedded-opentype"),
-    //url("../font/PTRootUI_Light/PTRootUI_Light.woff2") format("woff2"),
-    //url("../font/PTRootUI_Light/PTRootUI_Light.woff") format("woff"),
-    url("../../font/PTRootUI_Light/PTRootUI_Light.ttf") format("truetype");
+  src: url("../../font/PTRootUI_Light/PTRootUI_Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PTRootUIWebMedium";
-  //src: url("../font/PTRootUI_Medium/PTRootUI_Medium.eot");
   src: url("../../font/PTRootUI_Medium/PTRootUI_Medium.woff");
-  //src:
-          //url("../font/PTRootUI_Medium/PTRootUI_Medium.eot?#iefix")
-      //format("embedded-opentype"),
-    //url("../font/PTRootUI_Medium/PTRootUI_Medium.woff2") format("woff2"),
-    //url("../font/PTRootUI_Medium/PTRootUI_Medium.woff") format("woff"),
-    //url("../font/PTRootUI_Medium/PTRootUI_Medium.ttf") format("truetype");
-  //font-weight: normal;
-  //font-style: normal;
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "PTRootUIWebRegular";
-  //src: url("../font/PTRootUI_Regular/PTRootUI_Regular.eot");
-  src:
-          //url("../font/PTRootUI_Regular/PTRootUI_Regular.eot?#iefix")
-      //format("embedded-opentype"),
-    //url("../font/PTRootUI_Regular/PTRootUI_Regular.woff2") format("woff2"),
-    //url("../font/PTRootUI_Regular/PTRootUI_Regular.woff") format("woff"),
-    url("../../font/PTRootUI_Regular/PTRootUI_Regular.ttf") format("truetype");
+  src: url("../../font/PTRootUI_Regular/PTRootUI_Regular.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PTRootUIWebVF";
-  //src: url("../font/PTRootUI_VF/PTRootUI_VF.eot");
-  src:
-          //url("../font/PTRootUI_VF/PTRootUI_VF.eot?#iefix")
-      //format("embedded-opentype"),
-    //url("../font/PTRootUI_VF/PTRootUI_VF.woff2") format("woff2"),
-    //url("../font/PTRootUI_VF/PTRootUI_VF.woff") format("woff"),
-    url("../../font/PTRootUI_VF/PTRootUI_VF.ttf") format("truetype");
+  src: url("../../font/PTRootUI_VF/PTRootUI_VF.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PTSansWebBold";
-  //src: url("../font/PTSans_Bold/PTSans_Bold.eot");
-  src:
-          //url("../font/PTSans_Bold/PTSans_Bold.eot?#iefix")
-      //format("embedded-opentype"),
-    //url("../font/PTSans_Bold/PTSans_Bold.woff2") format("woff2"),
-    //url("../font/PTSans_Bold/PTSans_Bold.woff") format("woff"),
-    url("../../font/PTSans_Bold/PTSans_Bold.ttf") format("truetype");
+  src: url("../../font/PTSans_Bold/PTSans_Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PTSansWebCaptionBold";
-  //src: url("../font/PTSans_CaptionBold/PTSans_CaptionBold.eot");
-  src:
-          //url("../font/PTSans_CaptionBold/PTSans_CaptionBold.eot?#iefix")
-      //format("embedded-opentype"),
-    //url("../font/PTSans_CaptionBold/PTSans_CaptionBold.woff2")
-    //  format("woff2"),
-    //url("../font/PTSans_CaptionBold/PTSans_CaptionBold.woff") format("woff"),
-    url("../../font/PTSans_CaptionBold/PTSans_CaptionBold.ttf") format("truetype");
+  src: url("../../font/PTSans_CaptionBold/PTSans_CaptionBold.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PTSansWebCaptionRegular";
-  //src: url("../font/PTSans_CaptionRegular/PTSans_CaptionRegular.eot");
-  src:
-          //url("../font/PTSans_CaptionRegular/PTSans_CaptionRegular.eot?#iefix")
-      //format("embedded-opentype"),
-    //url("../font/PTSans_CaptionRegular/PTSans_CaptionRegular.woff2")
-    //  format("woff2"),
-    //url("../font/PTSans_CaptionRegular/PTSans_CaptionRegular.woff")
-    //  format("woff"),
-    url("../../font/PTSans_CaptionRegular/PTSans_CaptionRegular.ttf")
+  src: url("../../font/PTSans_CaptionRegular/PTSans_CaptionRegular.ttf")
     format("truetype");
   font-weight: normal;
   font-style: normal;
