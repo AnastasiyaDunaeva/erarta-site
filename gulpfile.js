@@ -22,14 +22,14 @@ const gulp = require("gulp"), //система описания задач
       html: "*.html",
       scss: "scss/*.scss",
       js: "js/**/*.js",
-      img: "img/*",
+      img: "img/**/*",
       font: "font/**/*"
     },
     watch: {
       html: "*.html",
       scss: "scss/**/*.scss",
       js: "js/**/*.js",
-      img: "img/*",
+      img: "img/**/*",
       font: "font/**/*",
     },
     clean: "build/",

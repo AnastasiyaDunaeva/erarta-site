@@ -2,19 +2,29 @@
 @import "partials/font";
 
 .ticket {
-  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 10px 0;
   background: $grey-4;
 
+
   &-description {
-    font-family: "PTRootUIWebMedium", "Comic Sans MS", sans-serif;
+    font-family: "PTRootUIWebRegular", "Arial", sans-serif;
+    text-align: center;
+    line-height: 1.2;
   }
 
   &-name,
   &-price {
-    font-family: "PTSansWebCaptionBold", "Comic Sans MS", sans-serif;
+    font-family: "PTSansWebCaptionBold", "Arial", sans-serif;
+    text-align: center;
   }
 
   &-price {
     color: $red;
+  }
+
+  &-image {
+    height: 40vh;
   }
 }
