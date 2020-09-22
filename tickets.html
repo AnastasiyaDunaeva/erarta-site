@@ -8,9 +8,181 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Билеты</title>
+    <link rel="stylesheet" href="css/tickets.css" />
   </head>
   <body>
-    <a href="index.html">Главная</a>
-    <h1>Билеты</h1>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/logo.svg" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mr-auto menu menu--line">
+            <li class="nav-item dropdown">
+              <span
+                class="nav-link chevron-down menu__link menu__link--1"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Музей
+                <img src="img/chevron-down.svg" alt="" width="16" height="16" />
+              </span>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <ul>
+                  <li class="dropdown-item">
+                    <a
+                      class="nav-link menu__link menu__link--1"
+                      href="about.html"
+                      >О музее</a
+                    >
+                  </li>
+                  <li class="dropdown-item">
+                    <a
+                      class="nav-link menu__link menu__link--1"
+                      href="excursions.html"
+                      >Экскурсии</a
+                    >
+                  </li>
+                  <li class="dropdown-item">
+                    <a
+                      class="nav-link menu__link menu__link--1"
+                      href="collections.html"
+                      >Коллекция</a
+                    >
+                  </li>
+                  <li class="dropdown-item">
+                    <a
+                      class="nav-link menu__link menu__link--1"
+                      href="only.html"
+                      >Только в Эрарте</a
+                    >
+                  </li>
+                  <li class="dropdown-item">
+                    <a
+                      class="nav-link menu__link menu__link--1"
+                      href="restaurant.html"
+                      >Ресторан</a
+                    >
+                  </li>
+                  <li class="dropdown-item">
+                    <a
+                      class="nav-link menu__link menu__link--1"
+                      href="shop.html"
+                      >Магазин</a
+                    >
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="nav-link menu__link menu__link--1" href="faq.html"
+                      >Часто задаваемые вопросы</a
+                    >
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="nav-link menu__link menu__link--1" href="faq.html"
+                      >План музея</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link menu__link menu__link--1"
+                href="exhibitions.html"
+                >Выставки</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu__link menu__link--1" href="tickets.html"
+                >Билеты</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu__link menu__link--1" href="contacts.html"
+                >Контакты</a
+              >
+            </li>
+            <li class="nav-item">
+              <img src="img/search.svg" alt="" width="27" height="27" />
+            </li>
+          </ul>
+          <div class="my-2 my-lg-0 text-s">
+            <img src="img/clock.svg" alt="" width="25" height="25" />
+            сегодня музей работает до 22:00
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="tickets container-fluid">
+      <div class="row heading-row justify-content-end">
+        <div class="col-lg-5">
+          <h2 class="heading-red float-right">Билеты</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <h3 class="text-xl text-bold tickets-heading">
+            Посетите 40 выставок в год по одному билету!
+          </h3>
+          <p class="tickets-heading-description">
+            За один визит в Эрарту невозможно увидеть все. Мы не просто
+            крупнейший частный музей современного искусства в России, но еще и
+            самый динамичный! Ежегодно мы проводим 40 временных выставок:
+            возвращаясь каждые три месяца, вы будете знакомиться с новыми
+            проектами. Поэтому всем посетителям, приобретающим билет, мы дарим
+            возможность целый год посещать музей бесплатно и получать яркие
+            впечатления!
+          </p>
+        </div>
+      </div>
+      <div class="row tickets-item">
+        <div class="col-md-12 col-lg-6 tickets-item-image">
+          <div class="tickets-item-image-col">
+            <h3 class="tickets-item-image-name text-l">Билет</h3>
+            <span class="tickets-item-image-description"
+              >более 40 выставок <br>в год по одному билету</span
+            >
+          </div>
+          <div class="tickets-item-image-col">
+            <div class="tickets-item-image-price text-xl text-bold"
+              >800 руб</div>
+            <div class="tickets-item-image-info text-bold"
+              >Только в кассах музея</div>
+          </div>
+          <img src="img/ticket-vertical.svg" alt="билет">
+        </div>
+        <div class="col-md-12 col-lg-6 tickets-item-description">
+          <ul>
+            <li>
+              Неограниченное число посещений постоянной экспозиции, временных
+              выставок и всех авторских проектов Эрарты, кроме тотальных
+              инсталляций U-Space, в течение 365 дней со дня приобретения билета
+              и его регистрации в кассах музея
+            </li>
+            <li>Доступ к аудиогидам</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/common.js"></script>
   </body>
 </html>
