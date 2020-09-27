@@ -25,6 +25,10 @@ input {
   }
 }
 
+a {
+  color: $blue-1;
+}
+
 hr {
   width: 75%;
   border-color: $grey-3;
@@ -84,17 +88,11 @@ header {
   font-weight: bold;
 }
 
-.jumbotron {
-  position: relative;
-  --height: calc(100vh - 150px);
-  height: var(--height);
-  padding-top: calc(var(--height) * 0.18);
-  padding-bottom: calc(var(--height) * 0.115);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: #ffffff;
+.nav-link {
+  color: $grey-1!important;
+  &:hover {
+    color: $grey-0!important;
+  }
 }
 
 .main-heading-content {

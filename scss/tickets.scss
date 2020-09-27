@@ -1,7 +1,8 @@
 @import "partials/common";
+@import "partials/button";
 
 .tickets {
-  color: $grey-3;
+  color: $grey-1;
   &-heading {
     margin-bottom: 42px;
     color: $grey-1;
@@ -10,6 +11,7 @@
     }
   }
   &-item {
+    margin-bottom: 370px;
     &-image {
       position: relative;
       background-color: $grey-4;
@@ -35,10 +37,34 @@
       }
       & img {
         position: absolute;
+        //top: 10px;
+        //right: 50px;
+        //width: 25vw;
+        //max-width: 435px;
+      }
+      &-1 {
         top: 10px;
         right: 50px;
         width: 25vw;
         max-width: 435px;
+      }
+      &-2 {
+        top: 35px;
+        right: 50px;
+        width: 25vw;
+        max-width: 435px;
+      }
+      &-3 {
+        top: 35px;
+        right: -42px;
+        width: 36vw;
+        max-width: 698px;
+      }
+      &-4 {
+        top: 35px;
+        right: 50px;
+        width: 25vw;
+        max-width: 385px;
       }
     }
     &-description {
@@ -61,11 +87,13 @@
             border-radius: 50%;
             width: 20px;
             height: 20px;
-            background-color: $blue;
+            background-color: $blue-1;
           }
         }
-
       }
+    }
+    & button {
+      margin: 6px 0;
     }
   }
 }

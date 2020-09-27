@@ -2,41 +2,23 @@
 
 .button-main {
   position: relative;
-  margin: 100px;
-  background: transparent;
+  min-width: 200px;
+  background-color: $blue-1;
+  border-color: $blue-1;
+  color: #fff;
   padding: 16px 24px;
-  border-color: $grey-1;
-
-  &:before,
-  &:after {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    height: 2px;
-    width: 75%;
-    background: #ffffff;
-    transition: width 0.23s linear, opacity 0.23s linear,
-      border-color 0.23s linear, color 0.23s linear;
-  }
-
-  &:before {
-    top: -2px;
-    left: 0;
-  }
-
-  &:after {
-    bottom: -2px;
-    right: 0;
-  }
+  border-style: solid;
+  transition: color 0.1s linear, background-color 0.1s linear,
+    border-color 0.1s linear;
 
   &:hover {
-    border-style: solid;
-    border-color: $red;
-    color: $red;
+    background-color: transparent;
+    color: $blue-1;
   }
-
-  &:hover:before,
-  &:hover:after {
-    width: 0;
+  &:focus {
+    background-color: transparent;
+    outline: none;
+    color: $blue-2;
+    border-color: $blue-2;
   }
 }

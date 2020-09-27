@@ -2,3 +2,19 @@
 @import "partials/slider";
 @import "partials/button";
 @import "partials/ticket";
+
+.jumbotron {
+  position: relative;
+  --height: calc(100vh - 150px);
+  height: var(--height);
+  padding: calc(var(--height) * 0.092) 0 calc(var(--height) * 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+
+  & button {
+    margin: 6vh;
+  }
+}
