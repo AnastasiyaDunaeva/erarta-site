@@ -76,21 +76,14 @@
                     </li>
                     <li class="dropdown-item">
                       <a
-                        class="nav-link menu__link menu__link--1"
-                        href="only.html"
-                        >Только в Эрарте</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a
-                        class="nav-link menu__link menu__link--1"
+                        class="nav-link nav-link-arrow menu__link menu__link--1"
                         href="https://restaurant.erarta.com"
                         >Ресторан</a
                       >
                     </li>
                     <li class="dropdown-item">
                       <a
-                        class="nav-link menu__link menu__link--1"
+                        class="nav-link nav-link-arrow menu__link menu__link--1"
                         href="https://shop.erarta.com"
                         >Магазин</a
                       >
@@ -104,9 +97,9 @@
                     </li>
                     <li class="dropdown-item">
                       <a
-                              class="nav-link menu__link menu__link--1"
-                              href="faq.html"
-                      >План музея</a
+                        class="nav-link menu__link menu__link--1"
+                        href="faq.html"
+                        >План музея</a
                       >
                     </li>
                   </ul>
@@ -153,322 +146,561 @@
         <div class="col-lg-12">
           <section class="section-content">
             <div class="button-group filter-button-group">
-              <button class="btn-filter" data-filter="*">all</button>
-              <button class="btn-filter" data-filter=".italy">Italy</button>
-              <button class="btn-filter" data-filter=".france">France</button>
-              <button class="btn-filter" data-filter=".australia">
-                Australia
+              <button
+                class="button-group-item active text-m text-medium"
+                data-filter="*"
+              >
+                все дни
               </button>
-              <button class="btn-filter" data-filter=".vietnam">Vietnam</button>
-              <button class="btn-filter" data-filter=".uk">
-                Great Britain
+              <button
+                class="button-group-item text-m text-medium"
+                data-filter=".italy"
+              >
+                сегодня
               </button>
-              <button class="btn-filter" data-filter=".germany">Germany</button>
-              <button class="btn-filter" data-filter=".iceland">Iceland</button>
+              <button
+                class="button-group-item text-m text-medium"
+                data-filter=".france"
+              >
+                дата
+              </button>
             </div>
+
             <div class="grid">
               <div class="grid-item italy">
-                <a href="exhibition.html">
-                  <div class="card">
-                    <img
-                      class="card__img"
-                      src="img/01.png"
-                      alt=""
-                    />
-                    <div class="card__info">
-                      <div class="card__type">Rome</div>
-                      <div class="card__desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit.
+                <figure class="effect-sarah">
+                  <a href="exhibition.html">
+                    <div class="exhibitions-card">
+                      <img
+                        class="card__img"
+                        src="img/exhibitions-01.jpg"
+                        alt=""
+                      />
+                      <div class="card__info">
+                        <div class="card__name">
+                          Марина Федорова. Cosmodreams
+                        </div>
+                        <div class="card__date text-s">
+                          2 сентября 2020 - 1 ноября 2020
+                        </div>
                       </div>
                     </div>
-                  </div></a
-                >
+                  </a>
+                  <figcaption>
+                    <p class="text-s">
+                      Размышления о космосе и его вторжении в земной мир гламура
+                    </p>
+                  </figcaption>
+                </figure>
               </div>
+
               <div class="grid-item italy">
-                <div class="card">
-                  <img
-                    class="card__img"
-                    src="img/02.jpg"
-                    alt=""
-                  />
-                  <div class="card__info">
-                    <div class="card__type">Venice</div>
-                    <div class="card__desc">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <figure class="effect-sarah">
+                  <a href="exhibition.html">
+                    <div class="exhibitions-card">
+                      <img
+                        class="card__img"
+                        src="img/exhibitions-02.jpg"
+                        alt=""
+                      />
+                      <div class="card__info">
+                        <div class="card__name">
+                          Хон Сонён. Отсюда и в вечность
+                        </div>
+                        <div class="card__date text-s">
+                          2 сенября 2020 - 29 ноября 2020
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </a>
+                  <figcaption>
+                    <p class="text-s">
+                      Исследование природы человека и его места в макрокосме
+                    </p>
+                  </figcaption>
+                </figure>
               </div>
+
               <div class="grid-item italy">
-                <div class="card">
-                  <img
-                    class="card__img"
-                    src="img/03.jpg"
-                    alt=""
-                  />
-                  <div class="card__info">
-                    <div class="card__type">Milan</div>
-                    <div class="card__desc">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <figure class="effect-sarah">
+                  <a href="exhibition.html">
+                    <div class="exhibitions-card">
+                      <img
+                        class="card__img"
+                        src="img/exhibitions-03.jpg"
+                        alt=""
+                      />
+                      <div class="card__info">
+                        <div class="card__name">
+                          Гарри Бенсон. The Beatles и не только
+                        </div>
+                        <div class="card__date text-s">
+                          02 сентября 2020 — 22 ноября 2020
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </a>
+                  <figcaption>
+                    <p class="text-s">Целая эпоха американской истории</p>
+                  </figcaption>
+                </figure>
               </div>
+
+              <div class="grid-item italy">
+                <figure class="effect-sarah">
+                  <a href="exhibition.html">
+                    <div class="exhibitions-card">
+                      <img
+                        class="card__img"
+                        src="img/exhibitions-04.jpg"
+                        alt=""
+                      />
+                      <div class="card__info">
+                        <div class="card__name">
+                          Эдуард Левен. Восточный ветер в ночь полной луны
+                        </div>
+                        <div class="card__date text-s">
+                          24 сентября - 22 ноября 2020
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <figcaption>
+                    <p class="text-s">
+                      Визуальные впечатления в образах, поэтичных и лаконичных,
+                      как хокку
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="grid-item italy">
+                <figure class="effect-sarah">
+                  <a href="exhibition.html">
+                    <div class="exhibitions-card">
+                      <img
+                        class="card__img"
+                        src="img/exhibitions-05.jpg"
+                        alt=""
+                      />
+                      <div class="card__info">
+                        <div class="card__name">
+                          2017. Pirelli Calendar by Peter Lindbergh and More
+                        </div>
+                        <div class="card__date text-s">
+                          5 марта - 6 июня 2021
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <figcaption>
+                    <p class="text-s">
+                      Календарь с полувековой историей, интерпретирующий
+                      современную культуру и формирующий новые тренды
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+
               <div class="grid-item france">
-                <div class="card">
-                  <img
-                    class="card__img"
-                    src="img/04.jpg"
-                    alt=""
-                  />
-                  <div class="card__info">
-                    <div class="card__type">Paris</div>
-                    <div class="card__desc">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <figure class="effect-sarah">
+                  <a href="exhibition.html">
+                    <div class="exhibitions-card">
+                      <img
+                        class="card__img"
+                        src="img/exhibitions-06.jpg"
+                        alt=""
+                      />
+                      <div class="card__info">
+                        <div class="card__name">Хосе Наварро</div>
+                        <div class="card__date text-s">
+                          23 сентября 2021 — 19 декабря 2021
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </a>
+                  <figcaption>
+                    <p class="text-s">
+                      Непредсказуемые сочетания привычных предметов и явлений
+                    </p>
+                  </figcaption>
+                </figure>
               </div>
+
               <div class="grid-item france">
-                <div class="card">
-                  <img
-                    class="card__img"
-                    src="img/05.jpg"
-                    alt=""
-                  />
-                  <div class="card__info">
-                    <div class="card__type">Marseille</div>
-                    <div class="card__desc">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <figure class="effect-sarah">
+                  <a href="exhibition.html">
+                    <div class="exhibitions-card">
+                      <img
+                        class="card__img"
+                        src="img/exhibitions-07.jpg"
+                        alt=""
+                      />
+                      <div class="card__info">
+                        <div class="card__name">
+                          Александр Попыкин. Моя музыка
+                        </div>
+                        <div class="card__date text-s">
+                          02 сентября 2020 — 08 ноября 2020
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </a>
+                  <figcaption>
+                    <p class="text-s">
+                      Особый язык городского пространства, готового к крику,
+                      стону или задушевному разговору
+                    </p>
+                  </figcaption>
+                </figure>
               </div>
+
               <div class="grid-item france">
-                <div class="card">
-                  <img
-                    class="card__img"
-                    src="img/06.jpg"
-                    alt=""
-                  />
-                  <div class="card__info">
-                    <div class="card__type">Bordeaux</div>
-                    <div class="card__desc">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <figure class="effect-sarah">
+                  <a href="exhibition.html">
+                    <div class="exhibitions-card">
+                      <img
+                        class="card__img"
+                        src="img/exhibitions-08.jpg"
+                        alt=""
+                      />
+                      <div class="card__info">
+                        <div class="card__name">
+                          Андреас Ваннештедт. Анимация
+                        </div>
+                        <div class="card__date text-s">
+                          04 сентября 2020 — 10 января 2021
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </a>
+                  <figcaption>
+                    <p class="text-s">Ощущения, близкие к феномену ASMR</p>
+                  </figcaption>
+                </figure>
               </div>
-              <div class="grid-item australia">
-                <div class="card">
-                  <img
-                    class="card__img"
-                    src="img/07.png"
-                    alt=""
-                  />
-                  <div class="card__info">
-                    <div class="card__type">Melbourne</div>
-                    <div class="card__desc">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+              <div class="grid-item france">
+                <figure class="effect-sarah">
+                  <a href="exhibition.html">
+                    <div class="exhibitions-card">
+                      <img
+                        class="card__img"
+                        src="img/exhibitions-09.jpg"
+                        alt=""
+                      />
+                      <div class="card__info">
+                        <div class="card__name">
+                          Рассел Джеймс. Десять лет за кулисами Victoria's
+                          Secret Fashion Show
+                        </div>
+                        <div class="card__date text-s">
+                          28 февраля 2020 — 08 ноября 2020
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </a>
+                  <figcaption>
+                    <p class="text-s">
+                      Выставка знаменитого австралийского фотографа,
+                      сотрудничающего с Vogue, W, American Photo, GQ и Sports
+                      Illustrated
+                    </p>
+                  </figcaption>
+                </figure>
               </div>
-              <div class="grid-item australia">
-                <div class="card">
-                  <img
-                    class="card__img"
-                    src="img/07.png"
-                    alt=""
-                  />
-                  <div class="card__info">
-                    <div class="card__type">Sidney</div>
-                    <div class="card__desc">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+              <div class="grid-item france">
+                <figure class="effect-sarah">
+                  <a href="exhibition.html">
+                    <div class="exhibitions-card">
+                      <img
+                        class="card__img"
+                        src="img/exhibitions-10.jpg"
+                        alt=""
+                      />
+                      <div class="card__info">
+                        <div class="card__name">Макс Зорн. Огни города</div>
+                        <div class="card__date text-s">
+                          29 апреля 2022 — 04 сентября 2022
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </a>
+                  <figcaption>
+                    <p class="text-s">
+                      Картины, напоминающие стоп-кадры из фильмов
+                    </p>
+                  </figcaption>
+                </figure>
               </div>
-              <div class="grid-item australia">
-                <div class="card">
-                  <img
-                    class="card__img"
-                    src="img/08.jpg"
-                    alt=""
-                  />
-                  <div class="card__info">
-                    <div class="card__type">Adelaide</div>
-                    <div class="card__desc">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+              <div class="grid-item france">
+                <figure class="effect-sarah">
+                  <a href="exhibition.html">
+                    <div class="exhibitions-card">
+                      <img
+                        class="card__img"
+                        src="img/exhibitions-11.jpg"
+                        alt=""
+                      />
+                      <div class="card__info">
+                        <div class="card__name">Хельмут Ньютон</div>
+                        <div class="card__date text-s">
+                          17 декабря 2021 — 17 апреля 2022
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </a>
+                  <figcaption>
+                    <p class="text-s">
+                      Переосмысление образа женщины, которая на фотографиях
+                      Ньютона впервые предстает властной и роковой
+                    </p>
+                  </figcaption>
+                </figure>
               </div>
-              <div class="grid-item vietnam">
-                <div class="card">
-                  <img
-                    class="card__img"
-                    src="img/09.jpg"
-                    alt=""
-                  />
-                  <div class="card__info">
-                    <div class="card__type">Hanoi</div>
-                    <div class="card__desc">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+              <div class="grid-item france">
+                <figure class="effect-sarah">
+                  <a href="exhibition.html">
+                    <div class="exhibitions-card">
+                      <img
+                        class="card__img"
+                        src="img/exhibitions-12.jpg"
+                        alt=""
+                      />
+                      <div class="card__info">
+                        <div class="card__name">
+                          The Bounty Killart. Взгляд из будущего: раскопки
+                          луккского храма 21 века
+                        </div>
+                        <div class="card__date text-s">
+                          03 сентября 2021 — 09 января 2022
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </a>
+                  <figcaption>
+                    <p class="text-s">
+                      Невероятная археологическая находка, сделанная осенью 3115
+                      года
+                    </p>
+                  </figcaption>
+                </figure>
               </div>
-              <div class="grid-item vietnam">
-                <div class="card">
-                  <img
-                    class="card__img"
-                    src="img/10.jpg"
-                    alt=""
-                  />
-                  <div class="card__info">
-                    <div class="card__type">Ho Chi Minh</div>
-                    <div class="card__desc">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+              <div class="grid-item france">
+                <figure class="effect-sarah">
+                  <a href="exhibition.html">
+                    <div class="exhibitions-card">
+                      <img
+                        class="card__img"
+                        src="img/exhibitions-13.jpg"
+                        alt=""
+                      />
+                      <div class="card__info">
+                        <div class="card__name">Маэстро Филип Трейси</div>
+                        <div class="card__date text-s">
+                          20 ноября 2020 — 21 марта 2021
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </a>
+                  <figcaption>
+                    <p class="text-s">
+                      Грандиозная выставка главного шляпника планеты станет
+                      подарком Петербургу на 10-летие музея Эрарта
+                    </p>
+                  </figcaption>
+                </figure>
               </div>
-              <div class="grid-item uk">
-                <div class="card">
-                  <img
-                    class="card__img"
-                    src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-                    alt=""
-                  />
-                  <div class="card__info">
-                    <div class="card__type">London</div>
-                    <div class="card__desc">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+              <div class="grid-item france">
+                <figure class="effect-sarah">
+                  <a href="exhibition.html">
+                    <div class="exhibitions-card">
+                      <img
+                        class="card__img"
+                        src="img/exhibitions-14.jpg"
+                        alt=""
+                      />
+                      <div class="card__info">
+                        <div class="card__name">
+                          Александра Ефимова. Быстрее ветра
+                        </div>
+                        <div class="card__date text-s">
+                          02 сентября 2020 — 08 ноября 2020
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </a>
+                  <figcaption>
+                    <p class="text-s">Картины, динамичные, как сновидения</p>
+                  </figcaption>
+                </figure>
               </div>
-              <div class="grid-item uk">
-                <div class="card">
-                  <img
-                    class="card__img"
-                    src="https://images.unsplash.com/photo-1515586838455-8f8f940d6853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1284&q=80"
-                    alt=""
-                  />
-                  <div class="card__info">
-                    <div class="card__type">Manchester</div>
-                    <div class="card__desc">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+              <div class="grid-item france">
+                <figure class="effect-sarah">
+                  <a href="exhibition.html">
+                    <div class="exhibitions-card">
+                      <img
+                        class="card__img"
+                        src="img/exhibitions-15.jpg"
+                        alt=""
+                      />
+                      <div class="card__info">
+                        <div class="card__name">
+                          SAMURAI FOTO. Мастера современной японской фотографии
+                        </div>
+                        <div class="card__date text-s">
+                          24 сентября 2020 — 22 ноября 2020
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </a>
+                  <figcaption>
+                    <p class="text-s">
+                      Созерцательные пейзажи, в которых разлита тихая красота
+                      окружающего мира
+                    </p>
+                  </figcaption>
+                </figure>
               </div>
-              <div class="grid-item uk">
-                <div class="card">
-                  <img
-                    class="card__img"
-                    src="https://images.unsplash.com/photo-1548860258-be5cfff4f165?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1388&q=80"
-                    alt=""
-                  />
-                  <div class="card__info">
-                    <div class="card__type">Birmingham</div>
-                    <div class="card__desc">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+              <div class="grid-item france">
+                <figure class="effect-sarah">
+                  <a href="exhibition.html">
+                    <div class="exhibitions-card">
+                      <img
+                        class="card__img"
+                        src="img/exhibitions-16.jpg"
+                        alt=""
+                      />
+                      <div class="card__info">
+                        <div class="card__name">
+                          Филипп Шангти. Вкус чувственного
+                        </div>
+                        <div class="card__date text-s">
+                          26 марта 2021 — 25 июля 2021
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </a>
+                  <figcaption>
+                    <p class="text-s">
+                      Эстетика как способ борьбы с актуальными проблемами XXI
+                      века
+                    </p>
+                  </figcaption>
+                </figure>
               </div>
-              <div class="grid-item germany">
-                <div class="card">
-                  <img
-                    class="card__img"
-                    src="https://images.unsplash.com/photo-1540224485413-4c7939106f3a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=869&q=80"
-                    alt=""
-                  />
-                  <div class="card__info">
-                    <div class="card__type">Berlin</div>
-                    <div class="card__desc">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+              <div class="grid-item france">
+                <figure class="effect-sarah">
+                  <a href="exhibition.html">
+                    <div class="exhibitions-card">
+                      <img
+                        class="card__img"
+                        src="img/exhibitions-17.jpg"
+                        alt=""
+                      />
+                      <div class="card__info">
+                        <div class="card__name">Ник Визи. X-Ray Men</div>
+                        <div class="card__date text-s">
+                          08 октября 2021 — 06 февраля 2022
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </a>
+                  <figcaption>
+                    <p class="text-s">Слияние науки и искусства</p>
+                  </figcaption>
+                </figure>
               </div>
-              <div class="grid-item germany">
-                <div class="card">
-                  <img
-                    class="card__img"
-                    src="https://images.unsplash.com/photo-1582053845391-71075acc7652?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80"
-                    alt=""
-                  />
-                  <div class="card__info">
-                    <div class="card__type">Munchen</div>
-                    <div class="card__desc">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+              <div class="grid-item france">
+                <figure class="effect-sarah">
+                  <a href="exhibition.html">
+                    <div class="exhibitions-card">
+                      <img
+                        class="card__img"
+                        src="img/exhibitions-18.jpg"
+                        alt=""
+                      />
+                      <div class="card__info">
+                        <div class="card__name">
+                          Виллем ван Вигель. Кинетическая скульптура
+                        </div>
+                        <div class="card__date text-s">
+                          23 апреля 2021 — 22 августа 2021
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </a>
+                  <figcaption>
+                    <p class="text-s">
+                      Размышление о взаимодействии предмета с пространством
+                    </p>
+                  </figcaption>
+                </figure>
               </div>
-              <div class="grid-item germany">
-                <div class="card">
-                  <img
-                    class="card__img"
-                    src="https://images.unsplash.com/photo-1422360902398-0a91ff2c1a1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1316&q=80"
-                    alt=""
-                  />
-                  <div class="card__info">
-                    <div class="card__type">Hamburg</div>
-                    <div class="card__desc">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+              <div class="grid-item france">
+                <figure class="effect-sarah">
+                  <a href="exhibition.html">
+                    <div class="exhibitions-card">
+                      <img
+                        class="card__img"
+                        src="img/exhibitions-19.jpg"
+                        alt=""
+                      />
+                      <div class="card__info">
+                        <div class="card__name">
+                          Concept Cars: La Grande Bellezza
+                        </div>
+                        <div class="card__date text-s">
+                          11 декабря 2020 — 11 апреля 2021
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  </a>
+                  <figcaption>
+                    <p class="text-s">
+                      Концепт-кары от легендарного автомобильного ателье Нуччо
+                      Бертоне, созданные для Alfa Romeo, Cadillac, Chevrolet и
+                      Porsche
+                    </p>
+                  </figcaption>
+                </figure>
               </div>
-              <div class="grid-item iceland">
-                <div class="card">
-                  <img
-                    class="card__img"
-                    src="https://images.unsplash.com/photo-1543321600-96f4f53d945f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-                    alt=""
-                  />
-                  <div class="card__info">
-                    <div class="card__type">Reykjavik</div>
-                    <div class="card__desc">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+              <div class="grid-item france">
+                <figure class="effect-sarah">
+                  <a href="exhibition.html">
+                    <div class="exhibitions-card">
+                      <img
+                        class="card__img"
+                        src="img/exhibitions-20.jpg"
+                        alt=""
+                      />
+                      <div class="card__info">
+                        <div class="card__name">
+                          Эрик Йоханссон. Страна иллюзий
+                        </div>
+                        <div class="card__date text-s">
+                          16 сентября 2022 — 15 января 2023
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item iceland">
-                <div class="card">
-                  <img
-                    class="card__img"
-                    src="https://images.unsplash.com/photo-1529867567745-7118c3a36f51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1469&q=80"
-                    alt=""
-                  />
-                  <div class="card__info">
-                    <div class="card__type">Akureyri</div>
-                    <div class="card__desc">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item iceland">
-                <div class="card">
-                  <img
-                    class="card__img"
-                    src="https://images.unsplash.com/photo-1590276750605-8c730831941a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80"
-                    alt=""
-                  />
-                  <div class="card__info">
-                    <div class="card__type">Reykjanesbær</div>
-                    <div class="card__desc">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </div>
-                  </div>
-                </div>
+                  </a>
+                  <figcaption>
+                    <p class="text-s">
+                      Картины, рассказывающие удивительные истории
+                    </p>
+                  </figcaption>
+                </figure>
               </div>
             </div>
           </section>

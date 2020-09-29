@@ -1,6 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="30.621" height="30.621" viewBox="0 0 30.621 30.621">
-  <g id="Icon_feather-search" data-name="Icon feather-search" transform="translate(-3 -3)">
-    <path id="Path_10" data-name="Path 10" d="M28.5,16.5a12,12,0,1,1-12-12A12,12,0,0,1,28.5,16.5Z" fill="none" stroke="#a8a8a8" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-    <path id="Path_11" data-name="Path 11" d="M31.5,31.5l-6.525-6.525" fill="none" stroke="#a8a8a8" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 28.8 28.7" style="enable-background:new 0 0 28.8 28.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#A8A8A8;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g id="Icon_feather-search" transform="translate(-3 -3)">
+	<path id="Path_10" class="st0" d="M27,16c0,6.1-5,11.1-11.1,11.1S4.8,22.2,4.8,16s5-11.1,11.1-11.1S27,9.9,27,16z"/>
+	<path id="Path_11" class="st0" d="M29.8,29.9l-6-6"/>
+</g>
 </svg>

@@ -20,8 +20,19 @@ input {
   color: $grey-1;
   border-color: $grey-1;
   border-style: solid;
+  transition: border-color 0.1s linear;
+  &::placeholder {
+    color: currentColor;
+    opacity: 0.8;
+  }
+  &:hover {
+    border-color: $grey-1;
+  }
   &:active {
     border-color: $grey-0;
+  }
+  &:focus {
+    outline: none;
   }
 }
 
@@ -87,11 +98,26 @@ header {
 .text-bold {
   font-weight: bold;
 }
+.text-medium {
+  font-weight: 500;
+}
 
 .nav-link {
   color: $grey-1 !important;
+  &-arrow .menu__link-inner:after {
+    content: "";
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    margin-left: 0.35em;
+    margin-bottom: 0.12em;
+    background: url("../img/arrow-up-right.svg") no-repeat;
+  }
   &:hover {
     color: $grey-0 !important;
+    &.nav-link-arrow .menu__link-inner:after {
+      opacity: 0.8;
+    }
   }
 }
 
@@ -111,7 +137,7 @@ header {
 }
 
 .main-slide {
-  max-width: 45%;
+  max-width: 35%;
   max-height: 100%;
   position: absolute;
   top: 0;
@@ -184,34 +210,26 @@ header {
 }
 
 .subscribe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 120px;
+  margin: 120px 0 240px;
   &-input-wrapper {
-    position: relative;
-    max-width: 650px;
-    width: 50%;
+    display: flex;
   }
   &-title {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+    font-family: $main-font-medium;
+    color: $blue-1;
   }
   &-email {
+    color: $blue-1;
     width: 100%;
     padding: 12px 24px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: $blue-1;
+    flex: 1;
   }
   &-submit {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
-    background: transparent;
-    color: $grey-1;
-    transition: color 0.2s linear;
-    &:hover {
-      color: $grey-3;
-    }
   }
 }
 

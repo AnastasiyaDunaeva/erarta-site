@@ -22,3 +22,25 @@
     border-color: $blue-2;
   }
 }
+
+.button-group {
+  display: flex;
+  margin: 10px 0 80px 130px;
+  &-item {
+    color: $grey-3;
+    background: #fff;
+    padding: 10px;
+    margin: 0 5px 0 10px;
+    border: none;
+    transition: color 0.1s linear;
+    &.active {
+      color: $blue-1;
+    }
+    &:hover {
+      color: $blue-2;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
