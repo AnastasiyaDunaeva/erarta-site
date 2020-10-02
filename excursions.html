@@ -8,9 +8,332 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Экскурсии</title>
+    <link rel="stylesheet" href="css/excursions.css" />
   </head>
   <body>
-    <a href="index.html">Главная</a>
-    <h1>Экскурсии</h1>
+    <div class="container-fluid">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html"
+            ><img src="img/logo.svg" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto menu menu--line">
+              <li class="nav-item dropdown">
+                <span
+                  class="nav-link chevron-down menu__link menu__link--1"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Музей
+                  <img
+                    src="img/chevron-down.svg"
+                    alt=""
+                    width="16"
+                    height="16"
+                  />
+                </span>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <ul>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="about.html"
+                        >О музее</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="excursions.html"
+                        >Экскурсии</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="collections.html"
+                        >Коллекция</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link nav-link-arrow menu__link menu__link--1"
+                        href="https://restaurant.erarta.com"
+                        >Ресторан</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link nav-link-arrow menu__link menu__link--1"
+                        href="https://shop.erarta.com"
+                        >Магазин</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="faq.html"
+                        >FAQ</a
+                      >
+                    </li>
+                    <li class="dropdown-item">
+                      <a
+                        class="nav-link menu__link menu__link--1"
+                        href="faq.html"
+                        >План музея</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link menu__link menu__link--1"
+                  href="exhibitions.html"
+                  >Выставки</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu__link menu__link--1" href="tickets.html"
+                  >Билеты</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link menu__link menu__link--1"
+                  href="contacts.html"
+                  >Контакты</a
+                >
+              </li>
+              <li class="nav-item">
+                <img src="img/search.svg" alt="" width="27" height="27" />
+              </li>
+            </ul>
+            <div class="my-2 my-lg-0 text-s">
+              <img src="img/clock.svg" alt="" width="25" height="25" />
+              сегодня музей работает до 22:00
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="row heading-row justify-content-end">
+        <div class="col-lg-5">
+          <h2 class="heading-red float-right">Экскурсии</h2>
+        </div>
+      </div>
+
+      <!--      <div class="row">-->
+      <!--        <div class="col-lg-12">-->
+      <section class="section-content">
+        <div class="button-group filter-button-group">
+          <button
+            class="button-group-item active text-m text-medium"
+            data-filter="*"
+          >
+            все
+          </button>
+          <button
+            class="button-group-item text-m text-medium"
+            data-filter=".italy"
+          >
+            дети
+          </button>
+          <button
+            class="button-group-item text-m text-medium"
+            data-filter=".france"
+          >
+            взрослые
+          </button>
+        </div>
+
+        <div class="grid">
+          <div class="grid-item italy">
+            <div class="row grid-item-inner">
+              <div class="col-lg-5">
+                <img
+                  class="img-fluid"
+                  src="img/excursions-1.jpg"
+                  alt="Выбери свой цвет"
+                />
+                <div class="space"></div>
+              </div>
+              <div class="col-lg-6 grid-item-inner-info">
+                <h3 class="title text-l">Время искусства<br />Эра и Арта</h3>
+                <p class="excursion-desc">
+                  Обзорная экскурсия для взрослых «Время искусства, или Эра
+                  Арта» познакомит вас как с проектом Эрарта в целом, так и с
+                  уникальной музейной коллекцией современного российского
+                  искусства второй половины XX века — начала XХI-го века,
+                  собранной в более, чем 15-ти регионах нашей страны. В обзорную
+                  экскурсию входит посещение пяти этажей постоянной музейной
+                  экспозиции, в которой представлены разнообразные формы и виды
+                  современного искусства художников разных поколений и
+                  направлений. Во время экскурсии Вы также узнаете об авторских
+                  проектах Эрарты и посетите кинозал с Изоанимацией, где
+                  посмотрите короткометражные видеоролики, снятые по мотивам
+                  картин из коллекции Эрарты.
+                </p>
+                <div class="price text-xl text-bold">1200 руб</div>
+                <button class="button-main">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item france">
+            <div class="row grid-item-inner">
+              <div class="col-lg-5">
+                <img
+                  class="img-fluid"
+                  src="img/excursions-2.jpg"
+                  alt="Выбери свой цвет"
+                />
+                <div class="space"></div>
+              </div>
+              <div class="col-lg-6 grid-item-inner-info">
+                <h3 class="title text-l">Детская обзорная<br />экскурсия</h3>
+                <p class="excursion-desc">
+                  Обзорная экскурсия для школьников в Эрарте познакомит учеников
+                  с новым для них, необычным и ярким миром современного
+                  искусства, многообразием его форм и сюжетов. В течение
+                  экскурсии ребята, находясь на экспозиции музея, смогут узнать,
+                  чем отличается современное искусство от классического, каковы
+                  его основные принципы и темы, что особенного в изображении
+                  мира современными художниками, какие необычные материалы и
+                  техники они используют. На обзорной экскурсии ребята также
+                  смогут познакомиться с авторскими проектами Эрарты, посетить
+                  кинозал с изоанимацией, а также обнаружить в залах музея много
+                  необычных вещей, будто сошедших с полотен.
+                </p>
+                <div class="price text-xl text-bold">3600 руб</div>
+                <button class="button-main">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item france">
+            <div class="row grid-item-inner">
+              <div class="col-lg-5">
+                <img
+                  class="img-fluid"
+                  src="img/excursions-3.jpg"
+                  alt="Выбери свой цвет"
+                />
+                <div class="space"></div>
+              </div>
+              <div class="col-lg-6 grid-item-inner-info">
+                <h3 class="title text-l">Выбери свой<br />цвет</h3>
+                <p class="excursion-desc">
+                  Экскурсия «Выбери свой цвет» посвящена феноменам цветового
+                  восприятия и цвету в современном искусстве. Это путешествие в
+                  настоящий параллельный мир, где есть свои законы и тайны — их
+                  изучают физики, химики, врачи, психологи, дизайнеры, историки
+                  и культурологи. Участники экскурсии смогут взглянуть на цвет
+                  глазами мастеров современной живописи, для которых он является
+                  главным средством выражения и основой создаваемых
+                  художественных образов.
+                </p>
+                <p class="excursion-desc">
+                  Вы узнаете, откуда взялись символические значения цветов, как
+                  связаны цвета и эмоции, каким образом цвета сочетаются друг с
+                  другом и как умелая работа с палитрой позволяет художнику
+                  создавать смыслы и показывать привычные вещи в неожиданном
+                  ракурсе.
+                </p>
+                <div class="price text-xl text-bold">1200 руб</div>
+                <button class="button-main">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item france">
+            <div class="row grid-item-inner">
+              <div class="col-lg-5">
+                <img
+                  class="img-fluid"
+                  src="img/excursions-4.jpg"
+                  alt="Выбери свой цвет"
+                />
+                <div class="space"></div>
+              </div>
+              <div class="col-lg-6 grid-item-inner-info">
+                <h3 class="title text-l">
+                  Классическое в современном<br />искусстве
+                </h3>
+                <p class="excursion-desc">
+                  Веласкес, Тициан, Вермеер, Репин — эти и многие другие имена,
+                  казалось бы, стали классикой, как и герои их полотен. Но
+                  почему-то в произведениях современного искусства мы нередко
+                  сталкиваемся с тем, что уже было создано этими художниками. На
+                  экскурсии ребята узнают, чем классическое искусство отличается
+                  от современного, когда заканчивается одно и начинается другое.
+                  Школьники смогут представить себя в роли искусствоведов и при
+                  помощи различных заданий и подсказок найти в работах из
+                  коллекции музея отсылки к классическим произведениям, ответить
+                  на вопрос: почему до сих пор современные художники продолжают
+                  вдохновляться классическими образцами?
+                </p>
+                <div class="price text-xl text-bold">4600 руб</div>
+                <button class="button-main">Заказать</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item france">
+            <div class="row grid-item-inner">
+              <div class="col-lg-5">
+                <img
+                  class="img-fluid"
+                  src="img/excursions-5.jpg"
+                  alt="Выбери свой цвет"
+                />
+                <div class="space"></div>
+              </div>
+              <div class="col-lg-6 grid-item-inner-info">
+                <h3 class="title text-l">
+                  Спасти фантазию,<br />или волшебная сила искусства
+                </h3>
+                <p class="excursion-desc">
+                  Что произойдет, если у нас отнимут фантазию? Будет ли мир без
+                  воображения так же удивителен и ярок? Квест-игра приглашает
+                  ребят отправиться в сказочное путешествие по музею Эрарта в
+                  поисках потерянной фантазии. Детям предстоит выбрать
+                  правильную дорогу, пройти по пути множество испытаний и
+                  препятствий, найти в музее добрых помощников и собрать все
+                  необходимые волшебные предметы, которые станут ключом к дверям
+                  прекрасного сада, где живет фантазия.
+                </p>
+
+                <div class="price text-xl text-bold">4300 руб</div>
+                <button class="button-main">Заказать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="js/common.js"></script>
+    <script src="js/animatedLink.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/gridFilter.js"></script>
   </body>
 </html>

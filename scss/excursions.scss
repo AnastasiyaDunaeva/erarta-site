@@ -1,0 +1,52 @@
+@import "partials/common";
+@import "partials/button";
+
+.grid-item {
+  width: 100%;
+
+  &-inner {
+    height: 100%;
+    position: relative;
+    border: none;
+    & img {
+      padding-right: 60px;
+    }
+    & .space {
+      height: 130px;
+    }
+    & .title {
+      font-weight: bold;
+      font-family: $main-font;
+      margin-bottom: 50px;
+    }
+    p {
+      margin-bottom: 24px;
+      text-align: justify;
+    }
+    .price {
+      margin: 80px 0 50px;
+    }
+  }
+  &:nth-child(even) .row {
+    flex-direction: row-reverse;
+    & img {
+      padding-left: 60px;
+      padding-right: 0;
+    }
+    & .grid-item-inner-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    & .title {
+      text-align: right;
+    }
+    & button {
+      flex-grow: 0;
+    }
+  }
+}
+
+.excursion-desc {
+  line-height: 1.4;
+}
