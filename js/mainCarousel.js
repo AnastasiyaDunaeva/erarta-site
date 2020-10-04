@@ -1,5 +1,4 @@
 //= "../node_modules/@glidejs/glide/dist/glide.min.js"
-//= "../node_modules/jquery/dist/jquery.slim.js"
 
 jQuery(document).ready(function ($) {
   var carouselExhibitions = new Glide(".glide-exhibitions", {
@@ -49,11 +48,10 @@ jQuery(document).ready(function ($) {
           previousElements.forEach((item, index) => {
             item.style.transformOrigin = "100% 50%";
             item.style.transform = `perspective(1500px) rotateY(${
-              20 * Math.max(index, 2)
-            }deg)`;
-            item.style.opacity = `${Math.max(1 - (index + 1) * 0.2, 0)}`;
+              25 * Math.max(index, 2)
+            }deg) translateX(${-10 * index - 150}px)`;
             item.style.filter = `saturate(${Math.max(
-              1 - (index + 1) * 0.3,
+              1 - (index + 1) * 0.35,
               0
             )})`;
           });
@@ -64,6 +62,7 @@ jQuery(document).ready(function ($) {
           var nextElements = [];
 
           var getNext = (element) => {
+            element.style.zIndex = `${nextElements.length === 1 ? 1 : 0}`;
             var e = element.nextElementSibling;
             if (e) {
               nextElements.push(e.querySelector(tiltableElement));
@@ -75,11 +74,10 @@ jQuery(document).ready(function ($) {
           nextElements.forEach((item, index) => {
             item.style.transformOrigin = "0% 50%";
             item.style.transform = `perspective(1500px) rotateY(${
-              -20 * Math.max(index, 2)
-            }deg)`;
-            item.style.opacity = `${Math.max(1 - (index + 1) * 0.2, 0)}`;
+              -25 * Math.max(index, 2)
+            }deg) translateX(${10 * index + 150}px)`;
             item.style.filter = `saturate(${Math.max(
-              1 - (index + 1) * 0.3,
+              1 - (index + 1) * 0.35,
               0
             )})`;
           });

@@ -9,12 +9,52 @@
   height: var(--height);
   padding: calc(var(--height) * 0.092) 0 calc(var(--height) * 0.1);
   overflow: hidden;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   background: #ffffff;
+  display: none;
+
+  .main-heading-content {
+    position: relative;
+  }
+
+  &.active {
+    display: flex;
+  }
 
   & button {
     margin: 6vh;
+  }
+}
+
+.glide-exhibitions {
+  & .glide__track {
+    padding-top: 24vh;
+  }
+  & .glide__slide {
+    position: relative;
+    transform: perspective(2000px) scale(1.5);
+    height: 18vmax;
+  }
+  & .glide__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.glide-news {
+  &-date {
+    color: $grey-3;
+    padding: 0 0.4em;
+  }
+  &-title {
+    font-family: $main-font-medium;
+    padding: 0 0.4em;
+    line-height: 30px;
+  }
+  & .glide__container {
+    height: 25vh;
+    max-height: 19vmax;
   }
 }

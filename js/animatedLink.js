@@ -1,4 +1,3 @@
-//= "../node_modules/jquery/dist/jquery.slim.js"
 //= "../node_modules/gsap/dist/gsap.js"
 
 class LinkFx {
