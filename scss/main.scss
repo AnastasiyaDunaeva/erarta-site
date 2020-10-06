@@ -29,7 +29,7 @@
 
 .glide-exhibitions {
   & .glide__track {
-    padding-top: 24vh;
+    padding-top: 15vh;
   }
   & .glide__slide {
     position: relative;
@@ -44,14 +44,19 @@
 }
 
 .glide-news {
+  .glide__arrows {
+    position: absolute;
+    top: -9vmax;
+  }
   &-date {
+    margin-top: 0.5em;
     color: $grey-3;
     padding: 0 0.4em;
   }
   &-title {
     font-family: $main-font-medium;
     padding: 0 0.4em;
-    line-height: 30px;
+    line-height: 1.1;
   }
   & .glide__container {
     height: 25vh;

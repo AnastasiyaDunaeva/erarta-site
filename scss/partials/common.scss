@@ -154,7 +154,7 @@ header {
     position: absolute;
     left: calc(89% - 100px);
     top: calc(50% - 200px);
-    opacity: 0;
+    opacity: 0.6;
     transition: opacity 0.2s linear, transform 0.4s linear;
 
     &:hover {

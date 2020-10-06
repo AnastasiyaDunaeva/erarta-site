@@ -82,7 +82,7 @@ gulp.task("build:js", function (done) {
 });
 
 gulp.task("build:img", function (done) {
-  gulp
+  return gulp
       .src(path.src.img)
       .pipe(gulp.dest(path.build.img))
       .pipe(reload({ stream: true }));

@@ -1,4 +1,6 @@
 @import "partials/common";
+@import "partials/button";
+@import "partials/form-contacts";
 
 .faq {
   &__header {
@@ -30,5 +32,57 @@
     border-left: 3px solid $red;
     margin: 0 160px 110px;
     padding: 0 68px;
+  }
+}
+
+.form-faq-wrapper {
+  display: flex;
+  color: $grey-1;
+  height: 826px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  &-img {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.faq-heading {
+  text-align: center;
+  margin: 200px 0 100px;
+}
+
+.form-faq {
+  padding: 60px 70px 0;
+  width: 100%;
+  border: 2px solid $grey-1;
+  &-title {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 52px;
+  }
+  &-field {
+    position: relative;
+    margin-bottom: 34px;
+    display: flex;
+    & label {
+      display: block;
+      width: 100%;
+      line-height: 25px;
+    }
+    & input,
+    & textarea {
+      display: block;
+      font-size: 20px;
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid $grey-1;
+    }
+    & button {
+      margin: 30px auto 0;
+    }
   }
 }
