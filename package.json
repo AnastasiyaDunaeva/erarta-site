@@ -5,8 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "build": "gulp",
-    "start": "gulp dev",
-    "prod": "gulp prod",
+    "start": "gulp serveprod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anastasiya Dunaeva",

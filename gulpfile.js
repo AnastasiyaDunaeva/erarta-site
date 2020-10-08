@@ -119,7 +119,7 @@ gulp.task("watch", function (done) {
 });
 
 gulp.task(
-  "dev",
+  "default",
   gulp.series(
     "clean",
     gulp.parallel(
@@ -131,20 +131,5 @@ gulp.task(
     ),
     "watch",
     "webserver"
-  )
-);
-
-gulp.task(
-  "prod",
-  gulp.series(
-    "clean",
-    gulp.parallel(
-      "build:html",
-      "build:scss",
-      "build:js",
-      "build:img",
-      "build:font"
-    ),
-    "deploy"
   )
 );
