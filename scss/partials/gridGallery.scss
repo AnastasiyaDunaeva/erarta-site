@@ -50,7 +50,7 @@
 }
 
 .grid figcaption {
-  background: #e4e4e4;
+  background: #f1f1f1;
   padding: 25px;
 }
 
@@ -142,7 +142,7 @@
 }
 
 .slideshow figcaption {
-  padding-bottom: 20px;
+  //padding-bottom: 20px;
 }
 
 .slideshow figcaption h3 {
@@ -152,7 +152,8 @@
 
 /* Navigation */
 .slideshow nav span {
-  position: fixed;
+  position: absolute;
+
   z-index: 1000;
   color: #59656c;
   text-align: center;
@@ -168,40 +169,21 @@
   transform: translateY(-50%);
 }
 
+.slideshow nav span.nav-prev {
+  transform: translateY(-50%) rotate(180deg);
+  transform-origin: center;
+
+}
 .slideshow nav span.nav-next {
   right: 0;
 }
 
 .slideshow nav span.nav-close {
-  top: 0;
+
+  top: 90px;
   right: 0;
   padding: 0.5em 1em;
   color: #31373a;
-}
-
-.icon:before,
-.icon:after {
-  font-family: 'fontawesome';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-span.nav-prev:before {
-  content: "\e601";
-}
-
-span.nav-next:before  {
-  content: "\e600";
-}
-
-span.nav-close:before {
-  content: "\e602";
 }
 
 /* Info on arrow key navigation */

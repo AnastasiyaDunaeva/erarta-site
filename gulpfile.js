@@ -16,14 +16,14 @@ const gulp = require("gulp"), //система описания задач
       scss: "build/css/",
       js: "build/js/",
       img: "build/img/",
-      font: "build/font/"
+      font: "build/font/",
     },
     src: {
       html: "*.html",
       scss: "scss/*.scss",
       js: "js/**/*.js",
       img: "img/**/*",
-      font: "font/**/*"
+      font: "font/**/*",
     },
     watch: {
       html: "*.html",
@@ -83,24 +83,31 @@ gulp.task("build:js", function (done) {
 
 gulp.task("build:img", function (done) {
   return gulp
-      .src(path.src.img)
-      .pipe(gulp.dest(path.build.img))
-      .pipe(reload({ stream: true }));
+    .src(path.src.img)
+    .pipe(gulp.dest(path.build.img))
+    .pipe(reload({ stream: true }));
   done();
 });
 
 gulp.task("build:font", function (done) {
   gulp
-      .src(path.src.font)
-      .pipe(gulp.dest(path.build.font))
-      .pipe(reload({ stream: true }));
+    .src(path.src.font)
+    .pipe(gulp.dest(path.build.font))
+    .pipe(reload({ stream: true }));
   done();
 });
-
 
 gulp.task("webserver", function (done) {
   browserSync(config);
   done();
+});
+
+gulp.task("serveprod", function () {
+  connect.server({
+    root: "./",
+    port: process.env.PORT || 5000, // localhost:5000
+    livereload: false,
+  });
 });
 
 gulp.task("watch", function (done) {
@@ -116,7 +123,13 @@ gulp.task(
   "default",
   gulp.series(
     "clean",
-    gulp.parallel("build:html", "build:scss", "build:js", "build:img", "build:font"),
+    gulp.parallel(
+      "build:html",
+      "build:scss",
+      "build:js",
+      "build:img",
+      "build:font"
+    ),
     "watch",
     "webserver"
   )

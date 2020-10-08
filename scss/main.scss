@@ -1,6 +1,5 @@
 @import "partials/common";
 @import "partials/slider";
-@import "partials/button";
 @import "partials/ticket";
 
 .jumbotron {
@@ -24,6 +23,49 @@
 
   & button {
     margin: 6vh;
+  }
+
+  .main-heading-content {
+    position: relative;
+    height: 100%;
+    z-index: 10;
+  }
+
+  .main-heading {
+    font-family: "Stapel_CM", Arial, sans-serif;
+    font-size: 7.2rem;
+    color: $red;
+    text-transform: uppercase;
+    line-height: 6.6666666rem;
+    margin-top: 0.33333333rem;
+  }
+
+  .main-slide {
+    max-width: 35%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    z-index: 0;
+
+    &-1 {
+      background: url("../img/main-slide-1.jpg") 0 100px no-repeat;
+      object-fit: cover;
+    }
+
+    &-arrow-next {
+      padding: 200px 100px;
+      position: absolute;
+      left: calc(89% - 100px);
+      top: calc(50% - 200px);
+      opacity: 0.6;
+      transition: opacity 0.2s linear, transform 0.4s linear;
+
+      &:hover {
+        opacity: 1;
+        transform: translateX(20px);
+      }
+    }
   }
 }
 
@@ -62,4 +104,49 @@
     height: 25vh;
     max-height: 19vmax;
   }
+}
+
+@media (max-width: 380px) {
+  .navbar {
+    padding: 18px 12px;
+    &-brand {
+      margin: 0;
+      img {
+        max-width: 50%;
+      }
+    }
+
+    .menu {
+      align-items: flex-end;
+      .nav-item {
+        padding: 0;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+      }
+    }
+    .dropdown-menu {
+      border: none;
+    }
+  }
+  .working-time {
+    display: none;
+  }
+
+  .jumbotron {
+    padding: 0;
+    .main-slide {
+      max-width: inherit;
+      max-height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+@media (min-width: 381px) and (max-width: 768px) {
+
+}
+@media (min-width: 769px) {
+
 }
