@@ -9,6 +9,7 @@
 
   &-title {
     margin-bottom: 60px;
+    text-align: center;
   }
 
   &-text {
@@ -46,4 +47,9 @@
       height: 100%;
     }
   }
+}
+
+.building-plan {
+  display: flex;
+  justify-content: center;
 }

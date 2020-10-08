@@ -113,6 +113,10 @@ header {
   font-weight: 500;
 }
 
+.dropdown-item:active{
+  background-color: $grey-4;
+}
+
 .nav-link {
   color: $grey-1 !important;
   &-arrow .menu__link-inner:after {

@@ -95,13 +95,6 @@
                         >FAQ</a
                       >
                     </li>
-                    <li class="dropdown-item">
-                      <a
-                        class="nav-link menu__link menu__link--1"
-                        href="faq.html"
-                        >План музея</a
-                      >
-                    </li>
                   </ul>
                 </div>
               </li>
@@ -365,41 +358,43 @@
       </main>
       <h3 class="text-xl text-bold faq-heading">Остались вопросы?</h3>
 
-      <div class="form-faq-wrapper col-md-10">
-        <form class="form-contacts form-faq" action="#">
-          <div class="form-contacts-title form-faq-title text-l">
-            Напишите нам
+      <div class="row justify-content-center">
+        <div class="form-faq-wrapper col-md-10">
+          <form class="form-contacts form-faq" action="#">
+            <div class="form-contacts-title form-faq-title text-l">
+              Напишите нам
+            </div>
+            <div class="form-contacts-field form-faq-field">
+              <label class="text-s" for="name"
+                >имя<input id="name" name="name" type="text"
+              /></label>
+            </div>
+            <div class="form-contacts-field form-faq-field">
+              <label class="text-s" for="phone"
+                >телефон<input id="phone" name="phone" type="tel"
+              /></label>
+            </div>
+            <div class="form-contacts-field form-faq-field">
+              <label class="text-s" for="email"
+                >e-mail<input id="email" name="email" type="email"
+              /></label>
+            </div>
+            <div class="form-contacts-field form-faq-field">
+              <label class="text-s" for="message"
+                >сообщение<textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                ></textarea>
+              </label>
+            </div>
+            <div class="form-contacts-field form-faq-field">
+              <button type="submit" class="button-main">Отправить</button>
+            </div>
+          </form>
+          <div>
+            <img src="img/faq-img.png" alt="faq-img" />
           </div>
-          <div class="form-contacts-field form-faq-field">
-            <label class="text-s" for="name"
-              >имя<input id="name" name="name" type="text"
-            /></label>
-          </div>
-          <div class="form-contacts-field form-faq-field">
-            <label class="text-s" for="phone"
-              >телефон<input id="phone" name="phone" type="tel"
-            /></label>
-          </div>
-          <div class="form-contacts-field form-faq-field">
-            <label class="text-s" for="email"
-              >e-mail<input id="email" name="email" type="email"
-            /></label>
-          </div>
-          <div class="form-contacts-field form-faq-field">
-            <label class="text-s" for="message"
-              >сообщение<textarea
-                id="message"
-                name="message"
-                rows="4"
-              ></textarea>
-            </label>
-          </div>
-          <div class="form-contacts-field form-faq-field">
-            <button type="submit" class="button-main">Отправить</button>
-          </div>
-        </form>
-        <div>
-          <img src="img/faq-img.png" alt="faq-img" />
         </div>
       </div>
     </div>
