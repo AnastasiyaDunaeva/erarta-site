@@ -86,7 +86,6 @@ gulp.task("build:img", function (done) {
     .src(path.src.img)
     .pipe(gulp.dest(path.build.img))
     .pipe(reload({ stream: true }));
-  done();
 });
 
 gulp.task("build:font", function (done) {
@@ -102,7 +101,7 @@ gulp.task("webserver", function (done) {
   done();
 });
 
-gulp.task("serveprod", function () {
+gulp.task("deploy", function () {
   connect.server({
     root: "./",
     port: process.env.PORT || 5000, // localhost:5000
@@ -120,7 +119,7 @@ gulp.task("watch", function (done) {
 });
 
 gulp.task(
-  "default",
+  "dev",
   gulp.series(
     "clean",
     gulp.parallel(
@@ -132,5 +131,20 @@ gulp.task(
     ),
     "watch",
     "webserver"
+  )
+);
+
+gulp.task(
+  "prod",
+  gulp.series(
+    "clean",
+    gulp.parallel(
+      "build:html",
+      "build:scss",
+      "build:js",
+      "build:img",
+      "build:font"
+    ),
+    "deploy"
   )
 );
